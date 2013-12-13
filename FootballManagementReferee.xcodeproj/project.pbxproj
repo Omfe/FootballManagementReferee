@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		991B9A69185A363700AA34A6 /* FRMFootballManagementServiceExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A07185A363700AA34A6 /* FRMFootballManagementServiceExample.m */; };
+		991B9A6A185A363700AA34A6 /* FRMArrayOfCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A0A185A363700AA34A6 /* FRMArrayOfCard.m */; };
+		991B9A6B185A363700AA34A6 /* FRMArrayOfGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A0C185A363700AA34A6 /* FRMArrayOfGoal.m */; };
+		991B9A6C185A363700AA34A6 /* FRMArrayOfMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A0E185A363700AA34A6 /* FRMArrayOfMatch.m */; };
+		991B9A6D185A363700AA34A6 /* FRMArrayOfPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A10185A363700AA34A6 /* FRMArrayOfPlayer.m */; };
+		991B9A6E185A363700AA34A6 /* FRMArrayOfReferee.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A12185A363700AA34A6 /* FRMArrayOfReferee.m */; };
+		991B9A6F185A363700AA34A6 /* FRMArrayOfTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A14185A363700AA34A6 /* FRMArrayOfTeam.m */; };
+		991B9A70185A363700AA34A6 /* FRMArrayOfTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A16185A363700AA34A6 /* FRMArrayOfTournament.m */; };
+		991B9A71185A363700AA34A6 /* FRMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A18185A363700AA34A6 /* FRMCard.m */; };
+		991B9A72185A363700AA34A6 /* FRMCompositeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A1A185A363700AA34A6 /* FRMCompositeType.m */; };
+		991B9A73185A363700AA34A6 /* FRMFootballManagementService.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A1C185A363700AA34A6 /* FRMFootballManagementService.m */; };
+		991B9A74185A363700AA34A6 /* FRMGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A1E185A363700AA34A6 /* FRMGoal.m */; };
+		991B9A75185A363700AA34A6 /* FRMMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A20185A363700AA34A6 /* FRMMatch.m */; };
+		991B9A76185A363700AA34A6 /* FRMPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A22185A363700AA34A6 /* FRMPerson.m */; };
+		991B9A77185A363700AA34A6 /* FRMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A24185A363700AA34A6 /* FRMPlayer.m */; };
+		991B9A78185A363700AA34A6 /* FRMReferee.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A26185A363700AA34A6 /* FRMReferee.m */; };
+		991B9A79185A363700AA34A6 /* FRMSudzc.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A28185A363700AA34A6 /* FRMSudzc.m */; };
+		991B9A7A185A363700AA34A6 /* FRMTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A2A185A363700AA34A6 /* FRMTeam.m */; };
+		991B9A7B185A363700AA34A6 /* FRMTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A2C185A363700AA34A6 /* FRMTournament.m */; };
+		991B9A7C185A363700AA34A6 /* Soap+Prefix.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A2E185A363700AA34A6 /* Soap+Prefix.m */; };
+		991B9A7D185A363700AA34A6 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A31185A363700AA34A6 /* NSData+Base64.m */; };
+		991B9A7E185A363700AA34A6 /* NSMutableArray+Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A33185A363700AA34A6 /* NSMutableArray+Soap.m */; };
+		991B9A7F185A363700AA34A6 /* Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A35185A363700AA34A6 /* Soap.m */; };
+		991B9A80185A363700AA34A6 /* SoapArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A37185A363700AA34A6 /* SoapArray.m */; };
+		991B9A81185A363700AA34A6 /* SoapDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A3A185A363700AA34A6 /* SoapDictionary.m */; };
+		991B9A82185A363700AA34A6 /* SoapFault.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A3C185A363700AA34A6 /* SoapFault.m */; };
+		991B9A83185A363700AA34A6 /* SoapHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A3E185A363700AA34A6 /* SoapHandler.m */; };
+		991B9A84185A363700AA34A6 /* SoapLiteral.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A40185A363700AA34A6 /* SoapLiteral.m */; };
+		991B9A85185A363700AA34A6 /* SoapNil.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A42185A363700AA34A6 /* SoapNil.m */; };
+		991B9A86185A363700AA34A6 /* SoapObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A44185A363700AA34A6 /* SoapObject.m */; };
+		991B9A87185A363700AA34A6 /* SoapParameter.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A46185A363700AA34A6 /* SoapParameter.m */; };
+		991B9A88185A363700AA34A6 /* SoapReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A48185A363700AA34A6 /* SoapReachability.m */; };
+		991B9A89185A363700AA34A6 /* SoapRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A4A185A363700AA34A6 /* SoapRequest.m */; };
+		991B9A8A185A363700AA34A6 /* SoapService.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A4C185A363700AA34A6 /* SoapService.m */; };
+		991B9A8B185A363700AA34A6 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A4F185A363700AA34A6 /* CTidy.m */; };
+		991B9A8C185A363700AA34A6 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A51185A363700AA34A6 /* CXHTMLDocument.m */; };
+		991B9A8D185A363700AA34A6 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A53185A363700AA34A6 /* CXMLDocument.m */; };
+		991B9A8E185A363700AA34A6 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A55185A363700AA34A6 /* CXMLDocument_CreationExtensions.m */; };
+		991B9A8F185A363700AA34A6 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A57185A363700AA34A6 /* CXMLDocument_PrivateExtensions.m */; };
+		991B9A90185A363700AA34A6 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A59185A363700AA34A6 /* CXMLElement.m */; };
+		991B9A91185A363700AA34A6 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A5B185A363700AA34A6 /* CXMLElement_CreationExtensions.m */; };
+		991B9A92185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A5D185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.m */; };
+		991B9A93185A363700AA34A6 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A5F185A363700AA34A6 /* CXMLNamespaceNode.m */; };
+		991B9A94185A363700AA34A6 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A61185A363700AA34A6 /* CXMLNode.m */; };
+		991B9A95185A363700AA34A6 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A63185A363700AA34A6 /* CXMLNode_CreationExtensions.m */; };
+		991B9A96185A363700AA34A6 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A65185A363700AA34A6 /* CXMLNode_PrivateExtensions.m */; };
+		991B9A97185A363700AA34A6 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A67185A363700AA34A6 /* CXMLNode_XPathExtensions.m */; };
+		991B9A99185A374700AA34A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991B9A98185A374700AA34A6 /* SystemConfiguration.framework */; };
+		991B9A9E185A4AC200AA34A6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 991B9A9A185A46B600AA34A6 /* libxml2.dylib */; };
+		99323E1518579AEE0055B89C /* FMRTournamentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99323E1418579AEE0055B89C /* FMRTournamentsViewController.xib */; };
+		99323E1918579C350055B89C /* FMRLeaguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99323E1718579C350055B89C /* FMRLeaguesViewController.m */; };
+		99323E1A18579C350055B89C /* FMRLeaguesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99323E1818579C350055B89C /* FMRLeaguesViewController.xib */; };
+		99323E1E1857A68A0055B89C /* FMRMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99323E1C1857A68A0055B89C /* FMRMatchViewController.m */; };
+		99323E1F1857A68A0055B89C /* FMRMatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99323E1D1857A68A0055B89C /* FMRMatchViewController.xib */; };
+		99B1C389184308DD0065D754 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1C388184308DD0065D754 /* Foundation.framework */; };
+		99B1C38B184308DD0065D754 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1C38A184308DD0065D754 /* CoreGraphics.framework */; };
+		99B1C38D184308DD0065D754 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1C38C184308DD0065D754 /* UIKit.framework */; };
+		99B1C393184308DD0065D754 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99B1C391184308DD0065D754 /* InfoPlist.strings */; };
+		99B1C395184308DD0065D754 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B1C394184308DD0065D754 /* main.m */; };
+		99B1C399184308DD0065D754 /* FMRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B1C398184308DD0065D754 /* FMRAppDelegate.m */; };
+		99B1C39F184308DE0065D754 /* FMRTournamentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B1C39E184308DE0065D754 /* FMRTournamentsViewController.m */; };
+		99B1C3A1184308DE0065D754 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99B1C3A0184308DE0065D754 /* Images.xcassets */; };
+		99B1C3A9184308DE0065D754 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1C388184308DD0065D754 /* Foundation.framework */; };
+		99B1C3AA184308DE0065D754 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B1C38C184308DD0065D754 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99B1C3AB184308DE0065D754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99B1C37D184308DC0065D754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99B1C384184308DD0065D754;
+			remoteInfo = FootballManagementReferee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		991B9A06185A363700AA34A6 /* FRMFootballManagementServiceExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMFootballManagementServiceExample.h; sourceTree = "<group>"; };
+		991B9A07185A363700AA34A6 /* FRMFootballManagementServiceExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMFootballManagementServiceExample.m; sourceTree = "<group>"; };
+		991B9A09185A363700AA34A6 /* FRMArrayOfCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfCard.h; sourceTree = "<group>"; };
+		991B9A0A185A363700AA34A6 /* FRMArrayOfCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfCard.m; sourceTree = "<group>"; };
+		991B9A0B185A363700AA34A6 /* FRMArrayOfGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfGoal.h; sourceTree = "<group>"; };
+		991B9A0C185A363700AA34A6 /* FRMArrayOfGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfGoal.m; sourceTree = "<group>"; };
+		991B9A0D185A363700AA34A6 /* FRMArrayOfMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfMatch.h; sourceTree = "<group>"; };
+		991B9A0E185A363700AA34A6 /* FRMArrayOfMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfMatch.m; sourceTree = "<group>"; };
+		991B9A0F185A363700AA34A6 /* FRMArrayOfPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfPlayer.h; sourceTree = "<group>"; };
+		991B9A10185A363700AA34A6 /* FRMArrayOfPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfPlayer.m; sourceTree = "<group>"; };
+		991B9A11185A363700AA34A6 /* FRMArrayOfReferee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfReferee.h; sourceTree = "<group>"; };
+		991B9A12185A363700AA34A6 /* FRMArrayOfReferee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfReferee.m; sourceTree = "<group>"; };
+		991B9A13185A363700AA34A6 /* FRMArrayOfTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfTeam.h; sourceTree = "<group>"; };
+		991B9A14185A363700AA34A6 /* FRMArrayOfTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfTeam.m; sourceTree = "<group>"; };
+		991B9A15185A363700AA34A6 /* FRMArrayOfTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfTournament.h; sourceTree = "<group>"; };
+		991B9A16185A363700AA34A6 /* FRMArrayOfTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfTournament.m; sourceTree = "<group>"; };
+		991B9A17185A363700AA34A6 /* FRMCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMCard.h; sourceTree = "<group>"; };
+		991B9A18185A363700AA34A6 /* FRMCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMCard.m; sourceTree = "<group>"; };
+		991B9A19185A363700AA34A6 /* FRMCompositeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMCompositeType.h; sourceTree = "<group>"; };
+		991B9A1A185A363700AA34A6 /* FRMCompositeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMCompositeType.m; sourceTree = "<group>"; };
+		991B9A1B185A363700AA34A6 /* FRMFootballManagementService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMFootballManagementService.h; sourceTree = "<group>"; };
+		991B9A1C185A363700AA34A6 /* FRMFootballManagementService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMFootballManagementService.m; sourceTree = "<group>"; };
+		991B9A1D185A363700AA34A6 /* FRMGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMGoal.h; sourceTree = "<group>"; };
+		991B9A1E185A363700AA34A6 /* FRMGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMGoal.m; sourceTree = "<group>"; };
+		991B9A1F185A363700AA34A6 /* FRMMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMMatch.h; sourceTree = "<group>"; };
+		991B9A20185A363700AA34A6 /* FRMMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMMatch.m; sourceTree = "<group>"; };
+		991B9A21185A363700AA34A6 /* FRMPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMPerson.h; sourceTree = "<group>"; };
+		991B9A22185A363700AA34A6 /* FRMPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMPerson.m; sourceTree = "<group>"; };
+		991B9A23185A363700AA34A6 /* FRMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMPlayer.h; sourceTree = "<group>"; };
+		991B9A24185A363700AA34A6 /* FRMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMPlayer.m; sourceTree = "<group>"; };
+		991B9A25185A363700AA34A6 /* FRMReferee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMReferee.h; sourceTree = "<group>"; };
+		991B9A26185A363700AA34A6 /* FRMReferee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMReferee.m; sourceTree = "<group>"; };
+		991B9A27185A363700AA34A6 /* FRMSudzc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMSudzc.h; sourceTree = "<group>"; };
+		991B9A28185A363700AA34A6 /* FRMSudzc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMSudzc.m; sourceTree = "<group>"; };
+		991B9A29185A363700AA34A6 /* FRMTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMTeam.h; sourceTree = "<group>"; };
+		991B9A2A185A363700AA34A6 /* FRMTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMTeam.m; sourceTree = "<group>"; };
+		991B9A2B185A363700AA34A6 /* FRMTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMTournament.h; sourceTree = "<group>"; };
+		991B9A2C185A363700AA34A6 /* FRMTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMTournament.m; sourceTree = "<group>"; };
+		991B9A2D185A363700AA34A6 /* Soap+Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Soap+Prefix.h"; sourceTree = "<group>"; };
+		991B9A2E185A363700AA34A6 /* Soap+Prefix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Soap+Prefix.m"; sourceTree = "<group>"; };
+		991B9A30185A363700AA34A6 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		991B9A31185A363700AA34A6 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		991B9A32185A363700AA34A6 /* NSMutableArray+Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Soap.h"; sourceTree = "<group>"; };
+		991B9A33185A363700AA34A6 /* NSMutableArray+Soap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Soap.m"; sourceTree = "<group>"; };
+		991B9A34185A363700AA34A6 /* Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Soap.h; sourceTree = "<group>"; };
+		991B9A35185A363700AA34A6 /* Soap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Soap.m; sourceTree = "<group>"; };
+		991B9A36185A363700AA34A6 /* SoapArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapArray.h; sourceTree = "<group>"; };
+		991B9A37185A363700AA34A6 /* SoapArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapArray.m; sourceTree = "<group>"; };
+		991B9A38185A363700AA34A6 /* SoapDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapDelegate.h; sourceTree = "<group>"; };
+		991B9A39185A363700AA34A6 /* SoapDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapDictionary.h; sourceTree = "<group>"; };
+		991B9A3A185A363700AA34A6 /* SoapDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapDictionary.m; sourceTree = "<group>"; };
+		991B9A3B185A363700AA34A6 /* SoapFault.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapFault.h; sourceTree = "<group>"; };
+		991B9A3C185A363700AA34A6 /* SoapFault.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapFault.m; sourceTree = "<group>"; };
+		991B9A3D185A363700AA34A6 /* SoapHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapHandler.h; sourceTree = "<group>"; };
+		991B9A3E185A363700AA34A6 /* SoapHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapHandler.m; sourceTree = "<group>"; };
+		991B9A3F185A363700AA34A6 /* SoapLiteral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapLiteral.h; sourceTree = "<group>"; };
+		991B9A40185A363700AA34A6 /* SoapLiteral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapLiteral.m; sourceTree = "<group>"; };
+		991B9A41185A363700AA34A6 /* SoapNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapNil.h; sourceTree = "<group>"; };
+		991B9A42185A363700AA34A6 /* SoapNil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapNil.m; sourceTree = "<group>"; };
+		991B9A43185A363700AA34A6 /* SoapObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapObject.h; sourceTree = "<group>"; };
+		991B9A44185A363700AA34A6 /* SoapObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapObject.m; sourceTree = "<group>"; };
+		991B9A45185A363700AA34A6 /* SoapParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapParameter.h; sourceTree = "<group>"; };
+		991B9A46185A363700AA34A6 /* SoapParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapParameter.m; sourceTree = "<group>"; };
+		991B9A47185A363700AA34A6 /* SoapReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapReachability.h; sourceTree = "<group>"; };
+		991B9A48185A363700AA34A6 /* SoapReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapReachability.m; sourceTree = "<group>"; };
+		991B9A49185A363700AA34A6 /* SoapRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapRequest.h; sourceTree = "<group>"; };
+		991B9A4A185A363700AA34A6 /* SoapRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapRequest.m; sourceTree = "<group>"; };
+		991B9A4B185A363700AA34A6 /* SoapService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoapService.h; sourceTree = "<group>"; };
+		991B9A4C185A363700AA34A6 /* SoapService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoapService.m; sourceTree = "<group>"; };
+		991B9A4E185A363700AA34A6 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		991B9A4F185A363700AA34A6 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		991B9A50185A363700AA34A6 /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		991B9A51185A363700AA34A6 /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		991B9A52185A363700AA34A6 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		991B9A53185A363700AA34A6 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		991B9A54185A363700AA34A6 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		991B9A55185A363700AA34A6 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		991B9A56185A363700AA34A6 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		991B9A57185A363700AA34A6 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		991B9A58185A363700AA34A6 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		991B9A59185A363700AA34A6 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		991B9A5A185A363700AA34A6 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		991B9A5B185A363700AA34A6 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		991B9A5C185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		991B9A5D185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		991B9A5E185A363700AA34A6 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		991B9A5F185A363700AA34A6 /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		991B9A60185A363700AA34A6 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		991B9A61185A363700AA34A6 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		991B9A62185A363700AA34A6 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		991B9A63185A363700AA34A6 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		991B9A64185A363700AA34A6 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		991B9A65185A363700AA34A6 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		991B9A66185A363700AA34A6 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		991B9A67185A363700AA34A6 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		991B9A68185A363700AA34A6 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		991B9A98185A374700AA34A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		991B9A9A185A46B600AA34A6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		99323E1418579AEE0055B89C /* FMRTournamentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMRTournamentsViewController.xib; sourceTree = "<group>"; };
+		99323E1618579C350055B89C /* FMRLeaguesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRLeaguesViewController.h; sourceTree = "<group>"; };
+		99323E1718579C350055B89C /* FMRLeaguesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRLeaguesViewController.m; sourceTree = "<group>"; };
+		99323E1818579C350055B89C /* FMRLeaguesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMRLeaguesViewController.xib; sourceTree = "<group>"; };
+		99323E1B1857A68A0055B89C /* FMRMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRMatchViewController.h; sourceTree = "<group>"; };
+		99323E1C1857A68A0055B89C /* FMRMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRMatchViewController.m; sourceTree = "<group>"; };
+		99323E1D1857A68A0055B89C /* FMRMatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMRMatchViewController.xib; sourceTree = "<group>"; };
+		99B1C385184308DD0065D754 /* FootballManagementReferee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FootballManagementReferee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B1C388184308DD0065D754 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		99B1C38A184308DD0065D754 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		99B1C38C184308DD0065D754 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		99B1C390184308DD0065D754 /* FootballManagementReferee-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FootballManagementReferee-Info.plist"; sourceTree = "<group>"; };
+		99B1C392184308DD0065D754 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		99B1C394184308DD0065D754 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		99B1C396184308DD0065D754 /* FootballManagementReferee-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FootballManagementReferee-Prefix.pch"; sourceTree = "<group>"; };
+		99B1C397184308DD0065D754 /* FMRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMRAppDelegate.h; sourceTree = "<group>"; };
+		99B1C398184308DD0065D754 /* FMRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMRAppDelegate.m; sourceTree = "<group>"; };
+		99B1C39D184308DE0065D754 /* FMRTournamentsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMRTournamentsViewController.h; sourceTree = "<group>"; };
+		99B1C39E184308DE0065D754 /* FMRTournamentsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMRTournamentsViewController.m; sourceTree = "<group>"; };
+		99B1C3A0184308DE0065D754 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		99B1C3A6184308DE0065D754 /* FootballManagementRefereeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FootballManagementRefereeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99B1C382184308DD0065D754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991B9A9E185A4AC200AA34A6 /* libxml2.dylib in Frameworks */,
+				991B9A99185A374700AA34A6 /* SystemConfiguration.framework in Frameworks */,
+				99B1C38B184308DD0065D754 /* CoreGraphics.framework in Frameworks */,
+				99B1C38D184308DD0065D754 /* UIKit.framework in Frameworks */,
+				99B1C389184308DD0065D754 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B1C3A3184308DE0065D754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B1C3AA184308DE0065D754 /* UIKit.framework in Frameworks */,
+				99B1C3A9184308DE0065D754 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		991B9A04185A363700AA34A6 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				991B9A05185A363700AA34A6 /* Examples */,
+				991B9A08185A363700AA34A6 /* Generated */,
+				991B9A2F185A363700AA34A6 /* Soap */,
+				991B9A4D185A363700AA34A6 /* TouchXML */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		991B9A05185A363700AA34A6 /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				991B9A06185A363700AA34A6 /* FRMFootballManagementServiceExample.h */,
+				991B9A07185A363700AA34A6 /* FRMFootballManagementServiceExample.m */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		991B9A08185A363700AA34A6 /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				991B9A09185A363700AA34A6 /* FRMArrayOfCard.h */,
+				991B9A0A185A363700AA34A6 /* FRMArrayOfCard.m */,
+				991B9A0B185A363700AA34A6 /* FRMArrayOfGoal.h */,
+				991B9A0C185A363700AA34A6 /* FRMArrayOfGoal.m */,
+				991B9A0D185A363700AA34A6 /* FRMArrayOfMatch.h */,
+				991B9A0E185A363700AA34A6 /* FRMArrayOfMatch.m */,
+				991B9A0F185A363700AA34A6 /* FRMArrayOfPlayer.h */,
+				991B9A10185A363700AA34A6 /* FRMArrayOfPlayer.m */,
+				991B9A11185A363700AA34A6 /* FRMArrayOfReferee.h */,
+				991B9A12185A363700AA34A6 /* FRMArrayOfReferee.m */,
+				991B9A13185A363700AA34A6 /* FRMArrayOfTeam.h */,
+				991B9A14185A363700AA34A6 /* FRMArrayOfTeam.m */,
+				991B9A15185A363700AA34A6 /* FRMArrayOfTournament.h */,
+				991B9A16185A363700AA34A6 /* FRMArrayOfTournament.m */,
+				991B9A17185A363700AA34A6 /* FRMCard.h */,
+				991B9A18185A363700AA34A6 /* FRMCard.m */,
+				991B9A19185A363700AA34A6 /* FRMCompositeType.h */,
+				991B9A1A185A363700AA34A6 /* FRMCompositeType.m */,
+				991B9A1B185A363700AA34A6 /* FRMFootballManagementService.h */,
+				991B9A1C185A363700AA34A6 /* FRMFootballManagementService.m */,
+				991B9A1D185A363700AA34A6 /* FRMGoal.h */,
+				991B9A1E185A363700AA34A6 /* FRMGoal.m */,
+				991B9A1F185A363700AA34A6 /* FRMMatch.h */,
+				991B9A20185A363700AA34A6 /* FRMMatch.m */,
+				991B9A21185A363700AA34A6 /* FRMPerson.h */,
+				991B9A22185A363700AA34A6 /* FRMPerson.m */,
+				991B9A23185A363700AA34A6 /* FRMPlayer.h */,
+				991B9A24185A363700AA34A6 /* FRMPlayer.m */,
+				991B9A25185A363700AA34A6 /* FRMReferee.h */,
+				991B9A26185A363700AA34A6 /* FRMReferee.m */,
+				991B9A27185A363700AA34A6 /* FRMSudzc.h */,
+				991B9A28185A363700AA34A6 /* FRMSudzc.m */,
+				991B9A29185A363700AA34A6 /* FRMTeam.h */,
+				991B9A2A185A363700AA34A6 /* FRMTeam.m */,
+				991B9A2B185A363700AA34A6 /* FRMTournament.h */,
+				991B9A2C185A363700AA34A6 /* FRMTournament.m */,
+				991B9A2D185A363700AA34A6 /* Soap+Prefix.h */,
+				991B9A2E185A363700AA34A6 /* Soap+Prefix.m */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		991B9A2F185A363700AA34A6 /* Soap */ = {
+			isa = PBXGroup;
+			children = (
+				991B9A30185A363700AA34A6 /* NSData+Base64.h */,
+				991B9A31185A363700AA34A6 /* NSData+Base64.m */,
+				991B9A32185A363700AA34A6 /* NSMutableArray+Soap.h */,
+				991B9A33185A363700AA34A6 /* NSMutableArray+Soap.m */,
+				991B9A34185A363700AA34A6 /* Soap.h */,
+				991B9A35185A363700AA34A6 /* Soap.m */,
+				991B9A36185A363700AA34A6 /* SoapArray.h */,
+				991B9A37185A363700AA34A6 /* SoapArray.m */,
+				991B9A38185A363700AA34A6 /* SoapDelegate.h */,
+				991B9A39185A363700AA34A6 /* SoapDictionary.h */,
+				991B9A3A185A363700AA34A6 /* SoapDictionary.m */,
+				991B9A3B185A363700AA34A6 /* SoapFault.h */,
+				991B9A3C185A363700AA34A6 /* SoapFault.m */,
+				991B9A3D185A363700AA34A6 /* SoapHandler.h */,
+				991B9A3E185A363700AA34A6 /* SoapHandler.m */,
+				991B9A3F185A363700AA34A6 /* SoapLiteral.h */,
+				991B9A40185A363700AA34A6 /* SoapLiteral.m */,
+				991B9A41185A363700AA34A6 /* SoapNil.h */,
+				991B9A42185A363700AA34A6 /* SoapNil.m */,
+				991B9A43185A363700AA34A6 /* SoapObject.h */,
+				991B9A44185A363700AA34A6 /* SoapObject.m */,
+				991B9A45185A363700AA34A6 /* SoapParameter.h */,
+				991B9A46185A363700AA34A6 /* SoapParameter.m */,
+				991B9A47185A363700AA34A6 /* SoapReachability.h */,
+				991B9A48185A363700AA34A6 /* SoapReachability.m */,
+				991B9A49185A363700AA34A6 /* SoapRequest.h */,
+				991B9A4A185A363700AA34A6 /* SoapRequest.m */,
+				991B9A4B185A363700AA34A6 /* SoapService.h */,
+				991B9A4C185A363700AA34A6 /* SoapService.m */,
+			);
+			path = Soap;
+			sourceTree = "<group>";
+		};
+		991B9A4D185A363700AA34A6 /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				991B9A4E185A363700AA34A6 /* CTidy.h */,
+				991B9A4F185A363700AA34A6 /* CTidy.m */,
+				991B9A50185A363700AA34A6 /* CXHTMLDocument.h */,
+				991B9A51185A363700AA34A6 /* CXHTMLDocument.m */,
+				991B9A52185A363700AA34A6 /* CXMLDocument.h */,
+				991B9A53185A363700AA34A6 /* CXMLDocument.m */,
+				991B9A54185A363700AA34A6 /* CXMLDocument_CreationExtensions.h */,
+				991B9A55185A363700AA34A6 /* CXMLDocument_CreationExtensions.m */,
+				991B9A56185A363700AA34A6 /* CXMLDocument_PrivateExtensions.h */,
+				991B9A57185A363700AA34A6 /* CXMLDocument_PrivateExtensions.m */,
+				991B9A58185A363700AA34A6 /* CXMLElement.h */,
+				991B9A59185A363700AA34A6 /* CXMLElement.m */,
+				991B9A5A185A363700AA34A6 /* CXMLElement_CreationExtensions.h */,
+				991B9A5B185A363700AA34A6 /* CXMLElement_CreationExtensions.m */,
+				991B9A5C185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.h */,
+				991B9A5D185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.m */,
+				991B9A5E185A363700AA34A6 /* CXMLNamespaceNode.h */,
+				991B9A5F185A363700AA34A6 /* CXMLNamespaceNode.m */,
+				991B9A60185A363700AA34A6 /* CXMLNode.h */,
+				991B9A61185A363700AA34A6 /* CXMLNode.m */,
+				991B9A62185A363700AA34A6 /* CXMLNode_CreationExtensions.h */,
+				991B9A63185A363700AA34A6 /* CXMLNode_CreationExtensions.m */,
+				991B9A64185A363700AA34A6 /* CXMLNode_PrivateExtensions.h */,
+				991B9A65185A363700AA34A6 /* CXMLNode_PrivateExtensions.m */,
+				991B9A66185A363700AA34A6 /* CXMLNode_XPathExtensions.h */,
+				991B9A67185A363700AA34A6 /* CXMLNode_XPathExtensions.m */,
+				991B9A68185A363700AA34A6 /* TouchXML.h */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		99323DF01857114A0055B89C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				991B9A04185A363700AA34A6 /* Source */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		99B1C37C184308DC0065D754 = {
+			isa = PBXGroup;
+			children = (
+				99B1C38E184308DD0065D754 /* FootballManagementReferee */,
+				99B1C387184308DD0065D754 /* Frameworks */,
+				99B1C386184308DD0065D754 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99B1C386184308DD0065D754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99B1C385184308DD0065D754 /* FootballManagementReferee.app */,
+				99B1C3A6184308DE0065D754 /* FootballManagementRefereeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99B1C387184308DD0065D754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				991B9A9A185A46B600AA34A6 /* libxml2.dylib */,
+				991B9A98185A374700AA34A6 /* SystemConfiguration.framework */,
+				99B1C388184308DD0065D754 /* Foundation.framework */,
+				99B1C38A184308DD0065D754 /* CoreGraphics.framework */,
+				99B1C38C184308DD0065D754 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99B1C38E184308DD0065D754 /* FootballManagementReferee */ = {
+			isa = PBXGroup;
+			children = (
+				99B1C397184308DD0065D754 /* FMRAppDelegate.h */,
+				99B1C398184308DD0065D754 /* FMRAppDelegate.m */,
+				99B1C39D184308DE0065D754 /* FMRTournamentsViewController.h */,
+				99B1C39E184308DE0065D754 /* FMRTournamentsViewController.m */,
+				99323E1418579AEE0055B89C /* FMRTournamentsViewController.xib */,
+				99323E1618579C350055B89C /* FMRLeaguesViewController.h */,
+				99323E1718579C350055B89C /* FMRLeaguesViewController.m */,
+				99323E1818579C350055B89C /* FMRLeaguesViewController.xib */,
+				99323E1B1857A68A0055B89C /* FMRMatchViewController.h */,
+				99323E1C1857A68A0055B89C /* FMRMatchViewController.m */,
+				99323E1D1857A68A0055B89C /* FMRMatchViewController.xib */,
+				99B1C3A0184308DE0065D754 /* Images.xcassets */,
+				99323DF01857114A0055B89C /* Model */,
+				99B1C38F184308DD0065D754 /* Supporting Files */,
+			);
+			path = FootballManagementReferee;
+			sourceTree = "<group>";
+		};
+		99B1C38F184308DD0065D754 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				99B1C390184308DD0065D754 /* FootballManagementReferee-Info.plist */,
+				99B1C391184308DD0065D754 /* InfoPlist.strings */,
+				99B1C394184308DD0065D754 /* main.m */,
+				99B1C396184308DD0065D754 /* FootballManagementReferee-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99B1C384184308DD0065D754 /* FootballManagementReferee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B1C3B7184308DE0065D754 /* Build configuration list for PBXNativeTarget "FootballManagementReferee" */;
+			buildPhases = (
+				99B1C381184308DD0065D754 /* Sources */,
+				99B1C382184308DD0065D754 /* Frameworks */,
+				99B1C383184308DD0065D754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FootballManagementReferee;
+			productName = FootballManagementReferee;
+			productReference = 99B1C385184308DD0065D754 /* FootballManagementReferee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99B1C3A5184308DE0065D754 /* FootballManagementRefereeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B1C3BA184308DE0065D754 /* Build configuration list for PBXNativeTarget "FootballManagementRefereeTests" */;
+			buildPhases = (
+				99B1C3A2184308DE0065D754 /* Sources */,
+				99B1C3A3184308DE0065D754 /* Frameworks */,
+				99B1C3A4184308DE0065D754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99B1C3AC184308DE0065D754 /* PBXTargetDependency */,
+			);
+			name = FootballManagementRefereeTests;
+			productName = FootballManagementRefereeTests;
+			productReference = 99B1C3A6184308DE0065D754 /* FootballManagementRefereeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		99B1C37D184308DC0065D754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FMR;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Omar Gudino";
+				TargetAttributes = {
+					99B1C3A5184308DE0065D754 = {
+						TestTargetID = 99B1C384184308DD0065D754;
+					};
+				};
+			};
+			buildConfigurationList = 99B1C380184308DD0065D754 /* Build configuration list for PBXProject "FootballManagementReferee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 99B1C37C184308DC0065D754;
+			productRefGroup = 99B1C386184308DD0065D754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99B1C384184308DD0065D754 /* FootballManagementReferee */,
+				99B1C3A5184308DE0065D754 /* FootballManagementRefereeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99B1C383184308DD0065D754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B1C3A1184308DE0065D754 /* Images.xcassets in Resources */,
+				99B1C393184308DD0065D754 /* InfoPlist.strings in Resources */,
+				99323E1518579AEE0055B89C /* FMRTournamentsViewController.xib in Resources */,
+				99323E1A18579C350055B89C /* FMRLeaguesViewController.xib in Resources */,
+				99323E1F1857A68A0055B89C /* FMRMatchViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B1C3A4184308DE0065D754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99B1C381184308DD0065D754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				991B9A81185A363700AA34A6 /* SoapDictionary.m in Sources */,
+				991B9A7F185A363700AA34A6 /* Soap.m in Sources */,
+				991B9A82185A363700AA34A6 /* SoapFault.m in Sources */,
+				99323E1918579C350055B89C /* FMRLeaguesViewController.m in Sources */,
+				991B9A74185A363700AA34A6 /* FRMGoal.m in Sources */,
+				991B9A93185A363700AA34A6 /* CXMLNamespaceNode.m in Sources */,
+				991B9A94185A363700AA34A6 /* CXMLNode.m in Sources */,
+				991B9A8E185A363700AA34A6 /* CXMLDocument_CreationExtensions.m in Sources */,
+				991B9A72185A363700AA34A6 /* FRMCompositeType.m in Sources */,
+				991B9A89185A363700AA34A6 /* SoapRequest.m in Sources */,
+				991B9A8C185A363700AA34A6 /* CXHTMLDocument.m in Sources */,
+				991B9A97185A363700AA34A6 /* CXMLNode_XPathExtensions.m in Sources */,
+				991B9A87185A363700AA34A6 /* SoapParameter.m in Sources */,
+				991B9A85185A363700AA34A6 /* SoapNil.m in Sources */,
+				991B9A80185A363700AA34A6 /* SoapArray.m in Sources */,
+				991B9A95185A363700AA34A6 /* CXMLNode_CreationExtensions.m in Sources */,
+				99B1C39F184308DE0065D754 /* FMRTournamentsViewController.m in Sources */,
+				991B9A69185A363700AA34A6 /* FRMFootballManagementServiceExample.m in Sources */,
+				991B9A6D185A363700AA34A6 /* FRMArrayOfPlayer.m in Sources */,
+				991B9A6C185A363700AA34A6 /* FRMArrayOfMatch.m in Sources */,
+				991B9A78185A363700AA34A6 /* FRMReferee.m in Sources */,
+				99323E1E1857A68A0055B89C /* FMRMatchViewController.m in Sources */,
+				991B9A84185A363700AA34A6 /* SoapLiteral.m in Sources */,
+				991B9A77185A363700AA34A6 /* FRMPlayer.m in Sources */,
+				99B1C399184308DD0065D754 /* FMRAppDelegate.m in Sources */,
+				991B9A90185A363700AA34A6 /* CXMLElement.m in Sources */,
+				991B9A8D185A363700AA34A6 /* CXMLDocument.m in Sources */,
+				991B9A86185A363700AA34A6 /* SoapObject.m in Sources */,
+				991B9A96185A363700AA34A6 /* CXMLNode_PrivateExtensions.m in Sources */,
+				991B9A92185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				991B9A7D185A363700AA34A6 /* NSData+Base64.m in Sources */,
+				991B9A7A185A363700AA34A6 /* FRMTeam.m in Sources */,
+				99B1C395184308DD0065D754 /* main.m in Sources */,
+				991B9A7E185A363700AA34A6 /* NSMutableArray+Soap.m in Sources */,
+				991B9A88185A363700AA34A6 /* SoapReachability.m in Sources */,
+				991B9A6A185A363700AA34A6 /* FRMArrayOfCard.m in Sources */,
+				991B9A91185A363700AA34A6 /* CXMLElement_CreationExtensions.m in Sources */,
+				991B9A75185A363700AA34A6 /* FRMMatch.m in Sources */,
+				991B9A8A185A363700AA34A6 /* SoapService.m in Sources */,
+				991B9A6B185A363700AA34A6 /* FRMArrayOfGoal.m in Sources */,
+				991B9A6E185A363700AA34A6 /* FRMArrayOfReferee.m in Sources */,
+				991B9A70185A363700AA34A6 /* FRMArrayOfTournament.m in Sources */,
+				991B9A7C185A363700AA34A6 /* Soap+Prefix.m in Sources */,
+				991B9A83185A363700AA34A6 /* SoapHandler.m in Sources */,
+				991B9A6F185A363700AA34A6 /* FRMArrayOfTeam.m in Sources */,
+				991B9A76185A363700AA34A6 /* FRMPerson.m in Sources */,
+				991B9A7B185A363700AA34A6 /* FRMTournament.m in Sources */,
+				991B9A71185A363700AA34A6 /* FRMCard.m in Sources */,
+				991B9A8F185A363700AA34A6 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				991B9A73185A363700AA34A6 /* FRMFootballManagementService.m in Sources */,
+				991B9A79185A363700AA34A6 /* FRMSudzc.m in Sources */,
+				991B9A8B185A363700AA34A6 /* CTidy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B1C3A2184308DE0065D754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		99B1C3AC184308DE0065D754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99B1C384184308DD0065D754 /* FootballManagementReferee */;
+			targetProxy = 99B1C3AB184308DE0065D754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		99B1C391184308DD0065D754 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99B1C392184308DD0065D754 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99B1C3B5184308DE0065D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		99B1C3B6184308DE0065D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99B1C3B8184308DE0065D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FootballManagementReferee/FootballManagementReferee-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "FootballManagementReferee/FootballManagementReferee-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		99B1C3B9184308DE0065D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FootballManagementReferee/FootballManagementReferee-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
+				INFOPLIST_FILE = "FootballManagementReferee/FootballManagementReferee-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		99B1C3BB184308DE0065D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FootballManagementReferee.app/FootballManagementReferee";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FootballManagementReferee/FootballManagementReferee-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FootballManagementRefereeTests/FootballManagementRefereeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		99B1C3BC184308DE0065D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FootballManagementReferee.app/FootballManagementReferee";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FootballManagementReferee/FootballManagementReferee-Prefix.pch";
+				INFOPLIST_FILE = "FootballManagementRefereeTests/FootballManagementRefereeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99B1C380184308DD0065D754 /* Build configuration list for PBXProject "FootballManagementReferee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B1C3B5184308DE0065D754 /* Debug */,
+				99B1C3B6184308DE0065D754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B1C3B7184308DE0065D754 /* Build configuration list for PBXNativeTarget "FootballManagementReferee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B1C3B8184308DE0065D754 /* Debug */,
+				99B1C3B9184308DE0065D754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B1C3BA184308DE0065D754 /* Build configuration list for PBXNativeTarget "FootballManagementRefereeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B1C3BB184308DE0065D754 /* Debug */,
+				99B1C3BC184308DE0065D754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 99B1C37D184308DC0065D754 /* Project object */;
+}
