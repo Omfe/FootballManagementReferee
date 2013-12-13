@@ -24,14 +24,26 @@
     [super viewDidLoad];
     self.service = [FRMFootballManagementService service];
     [self.service GetListTournament:self action:@selector(fetchTournaments:)];
-    [self.service UpdateTournament:self action:@selector(test: ) tournament:[self.tournamentsArray objectAtIndex:1]];
+    
 }
 
 - (void)fetchTournaments:(id)result
 {
+    FRMTournament *tournament;
+    
     //Mostrar alerta cuando sea error o SOAP fault (en chrome en Index)
     self.tournamentsArray = (NSMutableArray *)result;
     [self.tournamentsTableView reloadData];
+    
+    tournament = [self.tournamentsArray objectAtIndex:1];
+    tournament.Id = 5;
+    tournament.Name = @"Copa Probando";
+    [self.service UpdateTournament:self action:@selector(test: ) tournament:[self.tournamentsArray objectAtIndex:1]];
+}
+
+- (void)test:(id)result
+{
+    NSLog(@"%@", result);
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
