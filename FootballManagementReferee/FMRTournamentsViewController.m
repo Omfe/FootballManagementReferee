@@ -7,13 +7,14 @@
 //
 
 #import "FMRTournamentsViewController.h"
-#import "FRMFootballManagementService.h"
+#import "FMRFootballManagementService.h"
+#import "FMRLeaguesViewController.h"
 
 @interface FMRTournamentsViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tournamentsTableView;
 @property (strong, nonatomic) NSMutableArray *tournamentsArray;
-@property (strong, nonatomic) FRMFootballManagementService *service;
+@property (strong, nonatomic) FMRFootballManagementService *service;
 
 @end
 
@@ -22,14 +23,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.service = [FRMFootballManagementService service];
+    self.title = @"Tournaments";
+    self.service = [FMRFootballManagementService service];
     [self.service GetListTournament:self action:@selector(fetchTournaments:)];
     
 }
 
 - (void)fetchTournaments:(id)result
 {
-    FRMTournament *tournament;
+    FMRTournament *tournament;
     
     //Mostrar alerta cuando sea error o SOAP fault (en chrome en Index)
     self.tournamentsArray = (NSMutableArray *)result;
@@ -54,7 +56,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell;
-    FRMTournament *tournament;
+    FMRTournament *tournament;
     
     tournament = [self.tournamentsArray objectAtIndex:indexPath.row];
     
@@ -67,5 +69,31 @@
     
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FMRTournament *tournament;
+    
+    tournament = [self.tournamentsArray objectAtIndex:indexPath.row];
+    [self presentLeaguesViewControllerWithLeague:tournament];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
+- (void)presentLeaguesViewControllerWithLeague:(FMRTournament *)tournament
+{
+    FMRLeaguesViewController *leaguesViewController;
+    FMRTeam *team;
+    
+    team = [[FMRTeam alloc] init];
+    team.Id = 0;
+    team.Name = @"Los Mallocs";
+    [tournament.Teams insertObject:team atIndex:0];
+    
+    leaguesViewController = [[FMRLeaguesViewController alloc] initWithNibName:@"FMRLeaguesViewController" bundle:nil];
+    leaguesViewController.tournament = tournament;
+    [self.navigationController pushViewController:leaguesViewController animated:YES];
+}
+
 
 @end

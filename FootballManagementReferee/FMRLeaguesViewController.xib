@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMRLeaguesViewController">
             <connections>
-                <outlet property="leaguesTableView" destination="l36-rs-r1h" id="6hb-3B-6ow"/>
+                <outlet property="teamsTableView" destination="l36-rs-r1h" id="Qmu-5U-2Mr"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>

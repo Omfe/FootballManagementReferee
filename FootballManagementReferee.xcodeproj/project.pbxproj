@@ -7,26 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		991B9A69185A363700AA34A6 /* FRMFootballManagementServiceExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A07185A363700AA34A6 /* FRMFootballManagementServiceExample.m */; };
-		991B9A6A185A363700AA34A6 /* FRMArrayOfCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A0A185A363700AA34A6 /* FRMArrayOfCard.m */; };
-		991B9A6B185A363700AA34A6 /* FRMArrayOfGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A0C185A363700AA34A6 /* FRMArrayOfGoal.m */; };
-		991B9A6C185A363700AA34A6 /* FRMArrayOfMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A0E185A363700AA34A6 /* FRMArrayOfMatch.m */; };
-		991B9A6D185A363700AA34A6 /* FRMArrayOfPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A10185A363700AA34A6 /* FRMArrayOfPlayer.m */; };
-		991B9A6E185A363700AA34A6 /* FRMArrayOfReferee.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A12185A363700AA34A6 /* FRMArrayOfReferee.m */; };
-		991B9A6F185A363700AA34A6 /* FRMArrayOfTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A14185A363700AA34A6 /* FRMArrayOfTeam.m */; };
-		991B9A70185A363700AA34A6 /* FRMArrayOfTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A16185A363700AA34A6 /* FRMArrayOfTournament.m */; };
-		991B9A71185A363700AA34A6 /* FRMCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A18185A363700AA34A6 /* FRMCard.m */; };
-		991B9A72185A363700AA34A6 /* FRMCompositeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A1A185A363700AA34A6 /* FRMCompositeType.m */; };
-		991B9A73185A363700AA34A6 /* FRMFootballManagementService.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A1C185A363700AA34A6 /* FRMFootballManagementService.m */; };
-		991B9A74185A363700AA34A6 /* FRMGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A1E185A363700AA34A6 /* FRMGoal.m */; };
-		991B9A75185A363700AA34A6 /* FRMMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A20185A363700AA34A6 /* FRMMatch.m */; };
-		991B9A76185A363700AA34A6 /* FRMPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A22185A363700AA34A6 /* FRMPerson.m */; };
-		991B9A77185A363700AA34A6 /* FRMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A24185A363700AA34A6 /* FRMPlayer.m */; };
-		991B9A78185A363700AA34A6 /* FRMReferee.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A26185A363700AA34A6 /* FRMReferee.m */; };
-		991B9A79185A363700AA34A6 /* FRMSudzc.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A28185A363700AA34A6 /* FRMSudzc.m */; };
-		991B9A7A185A363700AA34A6 /* FRMTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A2A185A363700AA34A6 /* FRMTeam.m */; };
-		991B9A7B185A363700AA34A6 /* FRMTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A2C185A363700AA34A6 /* FRMTournament.m */; };
-		991B9A7C185A363700AA34A6 /* Soap+Prefix.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A2E185A363700AA34A6 /* Soap+Prefix.m */; };
 		991B9A7D185A363700AA34A6 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A31185A363700AA34A6 /* NSData+Base64.m */; };
 		991B9A7E185A363700AA34A6 /* NSMutableArray+Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A33185A363700AA34A6 /* NSMutableArray+Soap.m */; };
 		991B9A7F185A363700AA34A6 /* Soap.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A35185A363700AA34A6 /* Soap.m */; };
@@ -56,6 +36,25 @@
 		991B9A97185A363700AA34A6 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B9A67185A363700AA34A6 /* CXMLNode_XPathExtensions.m */; };
 		991B9A99185A374700AA34A6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991B9A98185A374700AA34A6 /* SystemConfiguration.framework */; };
 		991B9A9E185A4AC200AA34A6 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 991B9A9A185A46B600AA34A6 /* libxml2.dylib */; };
+		991BE2E7185E5E1A00AD39CA /* FMRArrayOfCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2C2185E5E1A00AD39CA /* FMRArrayOfCard.m */; };
+		991BE2E8185E5E1A00AD39CA /* FMRArrayOfGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2C4185E5E1A00AD39CA /* FMRArrayOfGoal.m */; };
+		991BE2E9185E5E1A00AD39CA /* FMRArrayOfMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2C6185E5E1A00AD39CA /* FMRArrayOfMatch.m */; };
+		991BE2EA185E5E1A00AD39CA /* FMRArrayOfPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2C8185E5E1A00AD39CA /* FMRArrayOfPlayer.m */; };
+		991BE2EB185E5E1A00AD39CA /* FMRArrayOfReferee.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2CA185E5E1A00AD39CA /* FMRArrayOfReferee.m */; };
+		991BE2EC185E5E1A00AD39CA /* FMRArrayOfTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2CC185E5E1A00AD39CA /* FMRArrayOfTeam.m */; };
+		991BE2ED185E5E1A00AD39CA /* FMRArrayOfTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2CE185E5E1A00AD39CA /* FMRArrayOfTournament.m */; };
+		991BE2EE185E5E1A00AD39CA /* FMRCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2D0185E5E1A00AD39CA /* FMRCard.m */; };
+		991BE2EF185E5E1A00AD39CA /* FMRCompositeType.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2D2185E5E1A00AD39CA /* FMRCompositeType.m */; };
+		991BE2F0185E5E1A00AD39CA /* FMRFootballManagementService.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2D4185E5E1A00AD39CA /* FMRFootballManagementService.m */; };
+		991BE2F1185E5E1A00AD39CA /* FMRGoal.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2D6185E5E1A00AD39CA /* FMRGoal.m */; };
+		991BE2F2185E5E1B00AD39CA /* FMRMatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2D8185E5E1A00AD39CA /* FMRMatch.m */; };
+		991BE2F3185E5E1B00AD39CA /* FMRPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2DA185E5E1A00AD39CA /* FMRPerson.m */; };
+		991BE2F4185E5E1B00AD39CA /* FMRPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2DC185E5E1A00AD39CA /* FMRPlayer.m */; };
+		991BE2F5185E5E1B00AD39CA /* FMRReferee.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2DE185E5E1A00AD39CA /* FMRReferee.m */; };
+		991BE2F6185E5E1B00AD39CA /* FMRSudzc.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2E0185E5E1A00AD39CA /* FMRSudzc.m */; };
+		991BE2F7185E5E1B00AD39CA /* FMRTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2E2185E5E1A00AD39CA /* FMRTeam.m */; };
+		991BE2F8185E5E1B00AD39CA /* FMRTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2E4185E5E1A00AD39CA /* FMRTournament.m */; };
+		991BE2F9185E5E1B00AD39CA /* Soap+Prefix.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2E6185E5E1A00AD39CA /* Soap+Prefix.m */; };
 		99323E1518579AEE0055B89C /* FMRTournamentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99323E1418579AEE0055B89C /* FMRTournamentsViewController.xib */; };
 		99323E1918579C350055B89C /* FMRLeaguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99323E1718579C350055B89C /* FMRLeaguesViewController.m */; };
 		99323E1A18579C350055B89C /* FMRLeaguesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99323E1818579C350055B89C /* FMRLeaguesViewController.xib */; };
@@ -84,46 +83,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		991B9A06185A363700AA34A6 /* FRMFootballManagementServiceExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMFootballManagementServiceExample.h; sourceTree = "<group>"; };
-		991B9A07185A363700AA34A6 /* FRMFootballManagementServiceExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMFootballManagementServiceExample.m; sourceTree = "<group>"; };
-		991B9A09185A363700AA34A6 /* FRMArrayOfCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfCard.h; sourceTree = "<group>"; };
-		991B9A0A185A363700AA34A6 /* FRMArrayOfCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfCard.m; sourceTree = "<group>"; };
-		991B9A0B185A363700AA34A6 /* FRMArrayOfGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfGoal.h; sourceTree = "<group>"; };
-		991B9A0C185A363700AA34A6 /* FRMArrayOfGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfGoal.m; sourceTree = "<group>"; };
-		991B9A0D185A363700AA34A6 /* FRMArrayOfMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfMatch.h; sourceTree = "<group>"; };
-		991B9A0E185A363700AA34A6 /* FRMArrayOfMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfMatch.m; sourceTree = "<group>"; };
-		991B9A0F185A363700AA34A6 /* FRMArrayOfPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfPlayer.h; sourceTree = "<group>"; };
-		991B9A10185A363700AA34A6 /* FRMArrayOfPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfPlayer.m; sourceTree = "<group>"; };
-		991B9A11185A363700AA34A6 /* FRMArrayOfReferee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfReferee.h; sourceTree = "<group>"; };
-		991B9A12185A363700AA34A6 /* FRMArrayOfReferee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfReferee.m; sourceTree = "<group>"; };
-		991B9A13185A363700AA34A6 /* FRMArrayOfTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfTeam.h; sourceTree = "<group>"; };
-		991B9A14185A363700AA34A6 /* FRMArrayOfTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfTeam.m; sourceTree = "<group>"; };
-		991B9A15185A363700AA34A6 /* FRMArrayOfTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMArrayOfTournament.h; sourceTree = "<group>"; };
-		991B9A16185A363700AA34A6 /* FRMArrayOfTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMArrayOfTournament.m; sourceTree = "<group>"; };
-		991B9A17185A363700AA34A6 /* FRMCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMCard.h; sourceTree = "<group>"; };
-		991B9A18185A363700AA34A6 /* FRMCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMCard.m; sourceTree = "<group>"; };
-		991B9A19185A363700AA34A6 /* FRMCompositeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMCompositeType.h; sourceTree = "<group>"; };
-		991B9A1A185A363700AA34A6 /* FRMCompositeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMCompositeType.m; sourceTree = "<group>"; };
-		991B9A1B185A363700AA34A6 /* FRMFootballManagementService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMFootballManagementService.h; sourceTree = "<group>"; };
-		991B9A1C185A363700AA34A6 /* FRMFootballManagementService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMFootballManagementService.m; sourceTree = "<group>"; };
-		991B9A1D185A363700AA34A6 /* FRMGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMGoal.h; sourceTree = "<group>"; };
-		991B9A1E185A363700AA34A6 /* FRMGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMGoal.m; sourceTree = "<group>"; };
-		991B9A1F185A363700AA34A6 /* FRMMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMMatch.h; sourceTree = "<group>"; };
-		991B9A20185A363700AA34A6 /* FRMMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMMatch.m; sourceTree = "<group>"; };
-		991B9A21185A363700AA34A6 /* FRMPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMPerson.h; sourceTree = "<group>"; };
-		991B9A22185A363700AA34A6 /* FRMPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMPerson.m; sourceTree = "<group>"; };
-		991B9A23185A363700AA34A6 /* FRMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMPlayer.h; sourceTree = "<group>"; };
-		991B9A24185A363700AA34A6 /* FRMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMPlayer.m; sourceTree = "<group>"; };
-		991B9A25185A363700AA34A6 /* FRMReferee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMReferee.h; sourceTree = "<group>"; };
-		991B9A26185A363700AA34A6 /* FRMReferee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMReferee.m; sourceTree = "<group>"; };
-		991B9A27185A363700AA34A6 /* FRMSudzc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMSudzc.h; sourceTree = "<group>"; };
-		991B9A28185A363700AA34A6 /* FRMSudzc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMSudzc.m; sourceTree = "<group>"; };
-		991B9A29185A363700AA34A6 /* FRMTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMTeam.h; sourceTree = "<group>"; };
-		991B9A2A185A363700AA34A6 /* FRMTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMTeam.m; sourceTree = "<group>"; };
-		991B9A2B185A363700AA34A6 /* FRMTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRMTournament.h; sourceTree = "<group>"; };
-		991B9A2C185A363700AA34A6 /* FRMTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRMTournament.m; sourceTree = "<group>"; };
-		991B9A2D185A363700AA34A6 /* Soap+Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Soap+Prefix.h"; sourceTree = "<group>"; };
-		991B9A2E185A363700AA34A6 /* Soap+Prefix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Soap+Prefix.m"; sourceTree = "<group>"; };
 		991B9A30185A363700AA34A6 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
 		991B9A31185A363700AA34A6 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
 		991B9A32185A363700AA34A6 /* NSMutableArray+Soap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Soap.h"; sourceTree = "<group>"; };
@@ -182,6 +141,44 @@
 		991B9A68185A363700AA34A6 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
 		991B9A98185A374700AA34A6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		991B9A9A185A46B600AA34A6 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		991BE2C1185E5E1A00AD39CA /* FMRArrayOfCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRArrayOfCard.h; sourceTree = "<group>"; };
+		991BE2C2185E5E1A00AD39CA /* FMRArrayOfCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRArrayOfCard.m; sourceTree = "<group>"; };
+		991BE2C3185E5E1A00AD39CA /* FMRArrayOfGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRArrayOfGoal.h; sourceTree = "<group>"; };
+		991BE2C4185E5E1A00AD39CA /* FMRArrayOfGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRArrayOfGoal.m; sourceTree = "<group>"; };
+		991BE2C5185E5E1A00AD39CA /* FMRArrayOfMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRArrayOfMatch.h; sourceTree = "<group>"; };
+		991BE2C6185E5E1A00AD39CA /* FMRArrayOfMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRArrayOfMatch.m; sourceTree = "<group>"; };
+		991BE2C7185E5E1A00AD39CA /* FMRArrayOfPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRArrayOfPlayer.h; sourceTree = "<group>"; };
+		991BE2C8185E5E1A00AD39CA /* FMRArrayOfPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRArrayOfPlayer.m; sourceTree = "<group>"; };
+		991BE2C9185E5E1A00AD39CA /* FMRArrayOfReferee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRArrayOfReferee.h; sourceTree = "<group>"; };
+		991BE2CA185E5E1A00AD39CA /* FMRArrayOfReferee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRArrayOfReferee.m; sourceTree = "<group>"; };
+		991BE2CB185E5E1A00AD39CA /* FMRArrayOfTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRArrayOfTeam.h; sourceTree = "<group>"; };
+		991BE2CC185E5E1A00AD39CA /* FMRArrayOfTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRArrayOfTeam.m; sourceTree = "<group>"; };
+		991BE2CD185E5E1A00AD39CA /* FMRArrayOfTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRArrayOfTournament.h; sourceTree = "<group>"; };
+		991BE2CE185E5E1A00AD39CA /* FMRArrayOfTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRArrayOfTournament.m; sourceTree = "<group>"; };
+		991BE2CF185E5E1A00AD39CA /* FMRCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRCard.h; sourceTree = "<group>"; };
+		991BE2D0185E5E1A00AD39CA /* FMRCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRCard.m; sourceTree = "<group>"; };
+		991BE2D1185E5E1A00AD39CA /* FMRCompositeType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRCompositeType.h; sourceTree = "<group>"; };
+		991BE2D2185E5E1A00AD39CA /* FMRCompositeType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRCompositeType.m; sourceTree = "<group>"; };
+		991BE2D3185E5E1A00AD39CA /* FMRFootballManagementService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRFootballManagementService.h; sourceTree = "<group>"; };
+		991BE2D4185E5E1A00AD39CA /* FMRFootballManagementService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRFootballManagementService.m; sourceTree = "<group>"; };
+		991BE2D5185E5E1A00AD39CA /* FMRGoal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRGoal.h; sourceTree = "<group>"; };
+		991BE2D6185E5E1A00AD39CA /* FMRGoal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRGoal.m; sourceTree = "<group>"; };
+		991BE2D7185E5E1A00AD39CA /* FMRMatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRMatch.h; sourceTree = "<group>"; };
+		991BE2D8185E5E1A00AD39CA /* FMRMatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRMatch.m; sourceTree = "<group>"; };
+		991BE2D9185E5E1A00AD39CA /* FMRPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRPerson.h; sourceTree = "<group>"; };
+		991BE2DA185E5E1A00AD39CA /* FMRPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRPerson.m; sourceTree = "<group>"; };
+		991BE2DB185E5E1A00AD39CA /* FMRPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRPlayer.h; sourceTree = "<group>"; };
+		991BE2DC185E5E1A00AD39CA /* FMRPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRPlayer.m; sourceTree = "<group>"; };
+		991BE2DD185E5E1A00AD39CA /* FMRReferee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRReferee.h; sourceTree = "<group>"; };
+		991BE2DE185E5E1A00AD39CA /* FMRReferee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRReferee.m; sourceTree = "<group>"; };
+		991BE2DF185E5E1A00AD39CA /* FMRSudzc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRSudzc.h; sourceTree = "<group>"; };
+		991BE2E0185E5E1A00AD39CA /* FMRSudzc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRSudzc.m; sourceTree = "<group>"; };
+		991BE2E1185E5E1A00AD39CA /* FMRTeam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRTeam.h; sourceTree = "<group>"; };
+		991BE2E2185E5E1A00AD39CA /* FMRTeam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRTeam.m; sourceTree = "<group>"; };
+		991BE2E3185E5E1A00AD39CA /* FMRTournament.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRTournament.h; sourceTree = "<group>"; };
+		991BE2E4185E5E1A00AD39CA /* FMRTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRTournament.m; sourceTree = "<group>"; };
+		991BE2E5185E5E1A00AD39CA /* Soap+Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Soap+Prefix.h"; sourceTree = "<group>"; };
+		991BE2E6185E5E1A00AD39CA /* Soap+Prefix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Soap+Prefix.m"; sourceTree = "<group>"; };
 		99323E1418579AEE0055B89C /* FMRTournamentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMRTournamentsViewController.xib; sourceTree = "<group>"; };
 		99323E1618579C350055B89C /* FMRLeaguesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRLeaguesViewController.h; sourceTree = "<group>"; };
 		99323E1718579C350055B89C /* FMRLeaguesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRLeaguesViewController.m; sourceTree = "<group>"; };
@@ -233,66 +230,11 @@
 		991B9A04185A363700AA34A6 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				991B9A05185A363700AA34A6 /* Examples */,
-				991B9A08185A363700AA34A6 /* Generated */,
+				991BE2C0185E5E1A00AD39CA /* Generated */,
 				991B9A2F185A363700AA34A6 /* Soap */,
 				991B9A4D185A363700AA34A6 /* TouchXML */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		991B9A05185A363700AA34A6 /* Examples */ = {
-			isa = PBXGroup;
-			children = (
-				991B9A06185A363700AA34A6 /* FRMFootballManagementServiceExample.h */,
-				991B9A07185A363700AA34A6 /* FRMFootballManagementServiceExample.m */,
-			);
-			path = Examples;
-			sourceTree = "<group>";
-		};
-		991B9A08185A363700AA34A6 /* Generated */ = {
-			isa = PBXGroup;
-			children = (
-				991B9A09185A363700AA34A6 /* FRMArrayOfCard.h */,
-				991B9A0A185A363700AA34A6 /* FRMArrayOfCard.m */,
-				991B9A0B185A363700AA34A6 /* FRMArrayOfGoal.h */,
-				991B9A0C185A363700AA34A6 /* FRMArrayOfGoal.m */,
-				991B9A0D185A363700AA34A6 /* FRMArrayOfMatch.h */,
-				991B9A0E185A363700AA34A6 /* FRMArrayOfMatch.m */,
-				991B9A0F185A363700AA34A6 /* FRMArrayOfPlayer.h */,
-				991B9A10185A363700AA34A6 /* FRMArrayOfPlayer.m */,
-				991B9A11185A363700AA34A6 /* FRMArrayOfReferee.h */,
-				991B9A12185A363700AA34A6 /* FRMArrayOfReferee.m */,
-				991B9A13185A363700AA34A6 /* FRMArrayOfTeam.h */,
-				991B9A14185A363700AA34A6 /* FRMArrayOfTeam.m */,
-				991B9A15185A363700AA34A6 /* FRMArrayOfTournament.h */,
-				991B9A16185A363700AA34A6 /* FRMArrayOfTournament.m */,
-				991B9A17185A363700AA34A6 /* FRMCard.h */,
-				991B9A18185A363700AA34A6 /* FRMCard.m */,
-				991B9A19185A363700AA34A6 /* FRMCompositeType.h */,
-				991B9A1A185A363700AA34A6 /* FRMCompositeType.m */,
-				991B9A1B185A363700AA34A6 /* FRMFootballManagementService.h */,
-				991B9A1C185A363700AA34A6 /* FRMFootballManagementService.m */,
-				991B9A1D185A363700AA34A6 /* FRMGoal.h */,
-				991B9A1E185A363700AA34A6 /* FRMGoal.m */,
-				991B9A1F185A363700AA34A6 /* FRMMatch.h */,
-				991B9A20185A363700AA34A6 /* FRMMatch.m */,
-				991B9A21185A363700AA34A6 /* FRMPerson.h */,
-				991B9A22185A363700AA34A6 /* FRMPerson.m */,
-				991B9A23185A363700AA34A6 /* FRMPlayer.h */,
-				991B9A24185A363700AA34A6 /* FRMPlayer.m */,
-				991B9A25185A363700AA34A6 /* FRMReferee.h */,
-				991B9A26185A363700AA34A6 /* FRMReferee.m */,
-				991B9A27185A363700AA34A6 /* FRMSudzc.h */,
-				991B9A28185A363700AA34A6 /* FRMSudzc.m */,
-				991B9A29185A363700AA34A6 /* FRMTeam.h */,
-				991B9A2A185A363700AA34A6 /* FRMTeam.m */,
-				991B9A2B185A363700AA34A6 /* FRMTournament.h */,
-				991B9A2C185A363700AA34A6 /* FRMTournament.m */,
-				991B9A2D185A363700AA34A6 /* Soap+Prefix.h */,
-				991B9A2E185A363700AA34A6 /* Soap+Prefix.m */,
-			);
-			path = Generated;
 			sourceTree = "<group>";
 		};
 		991B9A2F185A363700AA34A6 /* Soap */ = {
@@ -363,6 +305,51 @@
 				991B9A68185A363700AA34A6 /* TouchXML.h */,
 			);
 			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		991BE2C0185E5E1A00AD39CA /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				991BE2C1185E5E1A00AD39CA /* FMRArrayOfCard.h */,
+				991BE2C2185E5E1A00AD39CA /* FMRArrayOfCard.m */,
+				991BE2C3185E5E1A00AD39CA /* FMRArrayOfGoal.h */,
+				991BE2C4185E5E1A00AD39CA /* FMRArrayOfGoal.m */,
+				991BE2C5185E5E1A00AD39CA /* FMRArrayOfMatch.h */,
+				991BE2C6185E5E1A00AD39CA /* FMRArrayOfMatch.m */,
+				991BE2C7185E5E1A00AD39CA /* FMRArrayOfPlayer.h */,
+				991BE2C8185E5E1A00AD39CA /* FMRArrayOfPlayer.m */,
+				991BE2C9185E5E1A00AD39CA /* FMRArrayOfReferee.h */,
+				991BE2CA185E5E1A00AD39CA /* FMRArrayOfReferee.m */,
+				991BE2CB185E5E1A00AD39CA /* FMRArrayOfTeam.h */,
+				991BE2CC185E5E1A00AD39CA /* FMRArrayOfTeam.m */,
+				991BE2CD185E5E1A00AD39CA /* FMRArrayOfTournament.h */,
+				991BE2CE185E5E1A00AD39CA /* FMRArrayOfTournament.m */,
+				991BE2CF185E5E1A00AD39CA /* FMRCard.h */,
+				991BE2D0185E5E1A00AD39CA /* FMRCard.m */,
+				991BE2D1185E5E1A00AD39CA /* FMRCompositeType.h */,
+				991BE2D2185E5E1A00AD39CA /* FMRCompositeType.m */,
+				991BE2D3185E5E1A00AD39CA /* FMRFootballManagementService.h */,
+				991BE2D4185E5E1A00AD39CA /* FMRFootballManagementService.m */,
+				991BE2D5185E5E1A00AD39CA /* FMRGoal.h */,
+				991BE2D6185E5E1A00AD39CA /* FMRGoal.m */,
+				991BE2D7185E5E1A00AD39CA /* FMRMatch.h */,
+				991BE2D8185E5E1A00AD39CA /* FMRMatch.m */,
+				991BE2D9185E5E1A00AD39CA /* FMRPerson.h */,
+				991BE2DA185E5E1A00AD39CA /* FMRPerson.m */,
+				991BE2DB185E5E1A00AD39CA /* FMRPlayer.h */,
+				991BE2DC185E5E1A00AD39CA /* FMRPlayer.m */,
+				991BE2DD185E5E1A00AD39CA /* FMRReferee.h */,
+				991BE2DE185E5E1A00AD39CA /* FMRReferee.m */,
+				991BE2DF185E5E1A00AD39CA /* FMRSudzc.h */,
+				991BE2E0185E5E1A00AD39CA /* FMRSudzc.m */,
+				991BE2E1185E5E1A00AD39CA /* FMRTeam.h */,
+				991BE2E2185E5E1A00AD39CA /* FMRTeam.m */,
+				991BE2E3185E5E1A00AD39CA /* FMRTournament.h */,
+				991BE2E4185E5E1A00AD39CA /* FMRTournament.m */,
+				991BE2E5185E5E1A00AD39CA /* Soap+Prefix.h */,
+				991BE2E6185E5E1A00AD39CA /* Soap+Prefix.m */,
+			);
+			path = Generated;
 			sourceTree = "<group>";
 		};
 		99323DF01857114A0055B89C /* Model */ = {
@@ -535,14 +522,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				991B9A81185A363700AA34A6 /* SoapDictionary.m in Sources */,
+				991BE2F5185E5E1B00AD39CA /* FMRReferee.m in Sources */,
+				991BE2EC185E5E1A00AD39CA /* FMRArrayOfTeam.m in Sources */,
+				991BE2F7185E5E1B00AD39CA /* FMRTeam.m in Sources */,
+				991BE2F6185E5E1B00AD39CA /* FMRSudzc.m in Sources */,
 				991B9A7F185A363700AA34A6 /* Soap.m in Sources */,
 				991B9A82185A363700AA34A6 /* SoapFault.m in Sources */,
+				991BE2E7185E5E1A00AD39CA /* FMRArrayOfCard.m in Sources */,
 				99323E1918579C350055B89C /* FMRLeaguesViewController.m in Sources */,
-				991B9A74185A363700AA34A6 /* FRMGoal.m in Sources */,
 				991B9A93185A363700AA34A6 /* CXMLNamespaceNode.m in Sources */,
 				991B9A94185A363700AA34A6 /* CXMLNode.m in Sources */,
 				991B9A8E185A363700AA34A6 /* CXMLDocument_CreationExtensions.m in Sources */,
-				991B9A72185A363700AA34A6 /* FRMCompositeType.m in Sources */,
+				991BE2ED185E5E1A00AD39CA /* FMRArrayOfTournament.m in Sources */,
 				991B9A89185A363700AA34A6 /* SoapRequest.m in Sources */,
 				991B9A8C185A363700AA34A6 /* CXHTMLDocument.m in Sources */,
 				991B9A97185A363700AA34A6 /* CXMLNode_XPathExtensions.m in Sources */,
@@ -551,40 +542,35 @@
 				991B9A80185A363700AA34A6 /* SoapArray.m in Sources */,
 				991B9A95185A363700AA34A6 /* CXMLNode_CreationExtensions.m in Sources */,
 				99B1C39F184308DE0065D754 /* FMRTournamentsViewController.m in Sources */,
-				991B9A69185A363700AA34A6 /* FRMFootballManagementServiceExample.m in Sources */,
-				991B9A6D185A363700AA34A6 /* FRMArrayOfPlayer.m in Sources */,
-				991B9A6C185A363700AA34A6 /* FRMArrayOfMatch.m in Sources */,
-				991B9A78185A363700AA34A6 /* FRMReferee.m in Sources */,
 				99323E1E1857A68A0055B89C /* FMRMatchViewController.m in Sources */,
+				991BE2F2185E5E1B00AD39CA /* FMRMatch.m in Sources */,
 				991B9A84185A363700AA34A6 /* SoapLiteral.m in Sources */,
-				991B9A77185A363700AA34A6 /* FRMPlayer.m in Sources */,
 				99B1C399184308DD0065D754 /* FMRAppDelegate.m in Sources */,
+				991BE2EA185E5E1A00AD39CA /* FMRArrayOfPlayer.m in Sources */,
 				991B9A90185A363700AA34A6 /* CXMLElement.m in Sources */,
 				991B9A8D185A363700AA34A6 /* CXMLDocument.m in Sources */,
+				991BE2F9185E5E1B00AD39CA /* Soap+Prefix.m in Sources */,
+				991BE2F8185E5E1B00AD39CA /* FMRTournament.m in Sources */,
 				991B9A86185A363700AA34A6 /* SoapObject.m in Sources */,
 				991B9A96185A363700AA34A6 /* CXMLNode_PrivateExtensions.m in Sources */,
 				991B9A92185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				991BE2EE185E5E1A00AD39CA /* FMRCard.m in Sources */,
 				991B9A7D185A363700AA34A6 /* NSData+Base64.m in Sources */,
-				991B9A7A185A363700AA34A6 /* FRMTeam.m in Sources */,
+				991BE2F0185E5E1A00AD39CA /* FMRFootballManagementService.m in Sources */,
+				991BE2EF185E5E1A00AD39CA /* FMRCompositeType.m in Sources */,
 				99B1C395184308DD0065D754 /* main.m in Sources */,
+				991BE2F3185E5E1B00AD39CA /* FMRPerson.m in Sources */,
 				991B9A7E185A363700AA34A6 /* NSMutableArray+Soap.m in Sources */,
+				991BE2E8185E5E1A00AD39CA /* FMRArrayOfGoal.m in Sources */,
+				991BE2EB185E5E1A00AD39CA /* FMRArrayOfReferee.m in Sources */,
 				991B9A88185A363700AA34A6 /* SoapReachability.m in Sources */,
-				991B9A6A185A363700AA34A6 /* FRMArrayOfCard.m in Sources */,
 				991B9A91185A363700AA34A6 /* CXMLElement_CreationExtensions.m in Sources */,
-				991B9A75185A363700AA34A6 /* FRMMatch.m in Sources */,
+				991BE2E9185E5E1A00AD39CA /* FMRArrayOfMatch.m in Sources */,
 				991B9A8A185A363700AA34A6 /* SoapService.m in Sources */,
-				991B9A6B185A363700AA34A6 /* FRMArrayOfGoal.m in Sources */,
-				991B9A6E185A363700AA34A6 /* FRMArrayOfReferee.m in Sources */,
-				991B9A70185A363700AA34A6 /* FRMArrayOfTournament.m in Sources */,
-				991B9A7C185A363700AA34A6 /* Soap+Prefix.m in Sources */,
 				991B9A83185A363700AA34A6 /* SoapHandler.m in Sources */,
-				991B9A6F185A363700AA34A6 /* FRMArrayOfTeam.m in Sources */,
-				991B9A76185A363700AA34A6 /* FRMPerson.m in Sources */,
-				991B9A7B185A363700AA34A6 /* FRMTournament.m in Sources */,
-				991B9A71185A363700AA34A6 /* FRMCard.m in Sources */,
+				991BE2F1185E5E1A00AD39CA /* FMRGoal.m in Sources */,
 				991B9A8F185A363700AA34A6 /* CXMLDocument_PrivateExtensions.m in Sources */,
-				991B9A73185A363700AA34A6 /* FRMFootballManagementService.m in Sources */,
-				991B9A79185A363700AA34A6 /* FRMSudzc.m in Sources */,
+				991BE2F4185E5E1B00AD39CA /* FMRPlayer.m in Sources */,
 				991B9A8B185A363700AA34A6 /* CTidy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

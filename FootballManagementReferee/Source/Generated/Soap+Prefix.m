@@ -9,7 +9,7 @@
 
 @implementation Soap (Prefix)
 
-+(NSString*)prefix { return @"FRM"; }
++(NSString*)prefix { return @"FMR"; }
 
 @end
 			
