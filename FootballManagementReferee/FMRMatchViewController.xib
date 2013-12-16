@@ -6,6 +6,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FMRMatchViewController">
             <connections>
+                <outlet property="nameTeamALabel" destination="J1i-YL-rWO" id="JzX-Rr-KDc"/>
+                <outlet property="nameTeamBLabel" destination="O3l-Td-wal" id="68I-Yk-UPQ"/>
+                <outlet property="scoreTeamALabel" destination="SXL-gX-dc7" id="pfa-3U-InJ"/>
+                <outlet property="scoreTeamBLabel" destination="7Nw-Xg-TW2" id="8oe-MB-VJ6"/>
+                <outlet property="timerLabel" destination="wHg-HL-qY9" id="wfK-V5-eJs"/>
                 <outlet property="view" destination="1" id="3"/>
             </connections>
         </placeholder>
@@ -51,6 +56,9 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="goalButtonWasPressed:" destination="-1" eventType="touchUpInside" id="zdt-R0-30T"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcm-nY-gON">
                     <rect key="frame" x="109" y="258" width="102" height="44"/>
@@ -62,6 +70,9 @@
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                     </state>
+                    <connections>
+                        <action selector="yellowCardButtonWasPressed:" destination="-1" eventType="touchUpInside" id="yxn-lA-MNs"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRf-PW-hhl">
                     <rect key="frame" x="109" y="330" width="102" height="44"/>
@@ -73,6 +84,9 @@
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="titleShadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="redCardButtonWasPressed:" destination="-1" eventType="touchUpInside" id="FuX-T6-hD6"/>
+                    </connections>
                 </button>
                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wHg-HL-qY9">
                     <rect key="frame" x="63" y="118" width="194" height="31"/>
@@ -90,6 +104,9 @@
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="startMatchButtonWasPressed:" destination="-1" eventType="touchUpInside" id="afG-uq-OUu"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-7b-ba5">
                     <rect key="frame" x="109" y="466" width="102" height="40"/>
@@ -100,6 +117,10 @@
                         <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="playerListButtonWasPressed:" destination="-1" eventType="touchUpInside" id="3IB-8k-jdG"/>
+                        <action selector="playerListsButtonWasPressed:" destination="-1" eventType="touchUpInside" id="HtX-LP-cnB"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

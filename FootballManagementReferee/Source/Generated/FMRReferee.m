@@ -33,9 +33,9 @@
 	- (id) initWithNode: (CXMLNode*) node {
 		if(self = [super initWithNode: node])
 		{
-			self.Degree = [Soap getNodeValue: node withName: @"Degree"];
-			self.Matches = [[FMRArrayOfMatch createWithNode: [Soap getNode: node withName: @"Matches"]] object];
-			self.Tournaments = [[FMRArrayOfTournament createWithNode: [Soap getNode: node withName: @"Tournaments"]] object];
+			self.Degree = [Soap getNodeValue: node withName: @"a:Degree"];
+			self.Matches = [[FMRArrayOfMatch createWithNode: [Soap getNode: node withName: @"a:Matches"]] object];
+			self.Tournaments = [[FMRArrayOfTournament createWithNode: [Soap getNode: node withName: @"a:Tournaments"]] object];
 		}
 		return self;
 	}
@@ -59,16 +59,16 @@
 	- (NSMutableString*) serializeElements
 	{
 		NSMutableString* s = [super serializeElements];
-		if (self.Degree != nil) [s appendFormat: @"<Degree>%@</Degree>", [[self.Degree stringByReplacingOccurrencesOfString:@"\"" withString:@"&quot;"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"]];
+		if (self.Degree != nil) [s appendFormat: @"<a:Degree>%@</a:Degree>", [[self.Degree stringByReplacingOccurrencesOfString:@"\"" withString:@"&quot;"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"]];
 		if (self.Matches != nil && self.Matches.count > 0) {
-			[s appendFormat: @"<Matches>%@</Matches>", [FMRArrayOfMatch serialize: self.Matches]];
+			[s appendFormat: @"<a:Matches>%@</a:Matches>", [FMRArrayOfMatch serialize: self.Matches]];
 		} else {
-			[s appendString: @"<Matches/>"];
+			[s appendString: @"<a:Matches xsi:nil=\"true\"/>"];
 		}
 		if (self.Tournaments != nil && self.Tournaments.count > 0) {
-			[s appendFormat: @"<Tournaments>%@</Tournaments>", [FMRArrayOfTournament serialize: self.Tournaments]];
+			[s appendFormat: @"<a:Tournaments>%@</a:Tournaments>", [FMRArrayOfTournament serialize: self.Tournaments]];
 		} else {
-			[s appendString: @"<Tournaments/>"];
+			[s appendString: @"<a:Tournaments xsi:nil=\"true\"/>"];
 		}
 
 		return s;
@@ -77,7 +77,7 @@
 	- (NSMutableString*) serializeAttributes
 	{
 		NSMutableString* s = [super serializeAttributes];
-
+        [s appendString:@" xmlns:a=\"http://schemas.datacontract.org/2004/07/FootballManagement.Commons.Entities\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\""];
 		return s;
 	}
 	

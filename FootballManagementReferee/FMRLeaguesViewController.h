@@ -11,10 +11,7 @@
 
 @interface FMRLeaguesViewController : UIViewController
 
-typedef void(^FMRLeaguesCompletionBlock)();
-
 @property (strong, nonatomic) FMRTournament *tournament;
-@property (copy, nonatomic) FMRLeaguesCompletionBlock completionBlock;
 
 
 @end

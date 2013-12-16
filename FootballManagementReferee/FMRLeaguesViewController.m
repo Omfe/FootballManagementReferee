@@ -9,11 +9,13 @@
 #import "FMRLeaguesViewController.h"
 #import "FMRTournamentsViewController.h"
 #import "FMRFootballManagementService.h"
+#import "FMRMatchViewController.h"
 
 @interface FMRLeaguesViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *teamsTableView;
 @property (strong, nonatomic) FMRFootballManagementService *service;
+@property (strong, nonatomic) NSMutableArray *allMatchesArray;
 
 @end
 
@@ -23,7 +25,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = @"Teams in Tournament";
+        self.title = @"Matches in Tournament";
     }
     return self;
 }
@@ -31,8 +33,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    //self.service = [FRMFootballManagementService service];
-    //[self.service GetListTeam:self action:@selector(fetchTeams:)];
+    self.service = [FMRFootballManagementService service];
+    [self.service GetListMatch:self action:@selector(fetchMatches:)];
+    
 }
 
 - (void)test:(id)result
@@ -40,36 +43,63 @@
     NSLog(@"%@", result);
 }
 
-- (void)fetchTeams:(id)result
+- (void)fetchMatches:(id)result
 {
-    FMRTeam *team;
+    NSInteger matchesAdded = 0;
     
-    //Mostrar alerta cuando sea error o SOAP fault (en chrome en Index)
-    self.tournament.Teams = (NSMutableArray *)result;
+    if ([result isKindOfClass:[NSError class]] || [result isKindOfClass:[SoapFault class]]) {
+        NSLog(@"Error: %@", result);
+        return;
+    }
+    self.allMatchesArray = (NSMutableArray *)result;
+    
+    for (FMRMatch *match in self.allMatchesArray) {
+        if (self.tournament.Id == match.Tournament.Id) {
+            [self.tournament.Matches insertObject:match atIndex:matchesAdded];
+            matchesAdded++;
+        }
+    }
     [self.teamsTableView reloadData];
-    
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.tournament.Teams.count;
+    return self.tournament.Matches.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell;
-    FMRTeam *team;
+    FMRMatch *match;
     
-    team = [self.tournament.Teams objectAtIndex:indexPath.row];
+    match = [self.tournament.Matches objectAtIndex:indexPath.row];
     
     cell = [tableView dequeueReusableCellWithIdentifier:@"test"];
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"test"];
     }
     
-    cell.textLabel.text = team.Name;
-    
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ vs %@", match.Team.Name, match.Team1.Name];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    FMRMatch *match;
+    
+    match = [self.tournament.Matches objectAtIndex:indexPath.row];
+    [self presentMatchViewControllerWithLeague:match];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+}
+
+- (void)presentMatchViewControllerWithLeague:(FMRMatch *)match
+{
+    FMRMatchViewController *matchViewController;
+    
+    matchViewController = [[FMRMatchViewController alloc] initWithNibName:@"FMRMatchViewController" bundle:nil];
+    matchViewController.match = match;
+    [self.navigationController pushViewController:matchViewController animated:YES];
 }
 
 @end

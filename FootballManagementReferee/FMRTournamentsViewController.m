@@ -33,14 +33,14 @@
 {
     FMRTournament *tournament;
     
-    //Mostrar alerta cuando sea error o SOAP fault (en chrome en Index)
+    if ([result isKindOfClass:[NSError class]] || [result isKindOfClass:[SoapFault class]]) {
+        NSLog(@"Error: %@", result);
+        return;
+    }
     self.tournamentsArray = (NSMutableArray *)result;
     [self.tournamentsTableView reloadData];
     
-    tournament = [self.tournamentsArray objectAtIndex:1];
-    tournament.Id = 5;
-    tournament.Name = @"Copa Probando";
-    [self.service UpdateTournament:self action:@selector(test: ) tournament:[self.tournamentsArray objectAtIndex:1]];
+//    [self.service UpdateTournament:self action:@selector(test: ) tournament:[self.tournamentsArray objectAtIndex:1]];
 }
 
 - (void)test:(id)result
@@ -83,12 +83,6 @@
 - (void)presentLeaguesViewControllerWithLeague:(FMRTournament *)tournament
 {
     FMRLeaguesViewController *leaguesViewController;
-    FMRTeam *team;
-    
-    team = [[FMRTeam alloc] init];
-    team.Id = 0;
-    team.Name = @"Los Mallocs";
-    [tournament.Teams insertObject:team atIndex:0];
     
     leaguesViewController = [[FMRLeaguesViewController alloc] initWithNibName:@"FMRLeaguesViewController" bundle:nil];
     leaguesViewController.tournament = tournament;

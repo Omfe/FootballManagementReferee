@@ -32,10 +32,10 @@
 	- (id) initWithNode: (CXMLNode*) node {
 		if(self = [super initWithNode: node])
 		{
-			self.Birthday = [Soap dateFromString: [Soap getNodeValue: node withName: @"Birthday"]];
-			self.Gender = [Soap getNodeValue: node withName: @"Gender"];
-			self.Id = [[Soap getNodeValue: node withName: @"Id"] intValue];
-			self.Name = [Soap getNodeValue: node withName: @"Name"];
+			self.Birthday = [Soap dateFromString: [Soap getNodeValue: node withName: @"a:Birthday"]];
+			self.Gender = [Soap getNodeValue: node withName: @"a:Gender"];
+			self.Id = [[Soap getNodeValue: node withName: @"a:Id"] intValue];
+			self.Name = [Soap getNodeValue: node withName: @"a:Name"];
 		}
 		return self;
 	}
@@ -59,10 +59,22 @@
 	- (NSMutableString*) serializeElements
 	{
 		NSMutableString* s = [super serializeElements];
-		if (self.Birthday != nil) [s appendFormat: @"<Birthday>%@</Birthday>", [Soap getDateString: self.Birthday]];
-		if (self.Gender != nil) [s appendFormat: @"<Gender>%@</Gender>", [[self.Gender stringByReplacingOccurrencesOfString:@"\"" withString:@"&quot;"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"]];
-		[s appendFormat: @"<Id>%@</Id>", [NSString stringWithFormat: @"%i", self.Id]];
-		if (self.Name != nil) [s appendFormat: @"<Name>%@</Name>", [[self.Name stringByReplacingOccurrencesOfString:@"\"" withString:@"&quot;"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"]];
+		if (self.Birthday != nil) {
+            [s appendFormat: @"<a:Birthday>%@</a:Birthday>", [Soap getDateString: self.Birthday]];
+        } else {
+            [s appendString: @"<a:Birthday xsi:nil=\"true\"/>"];
+        }
+		if (self.Gender != nil) {
+            [s appendFormat: @"<a:Gender>%@</a:Gender>", [[self.Gender stringByReplacingOccurrencesOfString:@"\"" withString:@"&quot;"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"]];
+        } else {
+            [s appendString: @"<a:Gender xsi:nil=\"true\"/>"];
+        }
+		[s appendFormat: @"<a:Id>%@</a:Id>", [NSString stringWithFormat: @"%i", self.Id]];
+		if (self.Name != nil) {
+            [s appendFormat: @"<a:Name>%@</a:Name>", [[self.Name stringByReplacingOccurrencesOfString:@"\"" withString:@"&quot;"] stringByReplacingOccurrencesOfString:@"&" withString:@"&amp;"]];
+        } else {
+            [s appendString: @"<a:Name xsi:nil=\"true\"/>"];
+        }
 
 		return s;
 	}
@@ -70,7 +82,7 @@
 	- (NSMutableString*) serializeAttributes
 	{
 		NSMutableString* s = [super serializeAttributes];
-
+        [s appendString:@" xmlns:a=\"http://schemas.datacontract.org/2004/07/FootballManagement.Commons.Entities\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\""];
 		return s;
 	}
 	

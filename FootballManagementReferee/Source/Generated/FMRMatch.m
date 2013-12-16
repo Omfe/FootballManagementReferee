@@ -49,15 +49,15 @@
 	- (id) initWithNode: (CXMLNode*) node {
 		if(self = [super initWithNode: node])
 		{
-			self.Cards = [[FMRArrayOfCard createWithNode: [Soap getNode: node withName: @"Cards"]] object];
-			self.Goals = [[FMRArrayOfGoal createWithNode: [Soap getNode: node withName: @"Goals"]] object];
-			self.Id = [[Soap getNodeValue: node withName: @"Id"] intValue];
-			self.MatchDate = [Soap dateFromString: [Soap getNodeValue: node withName: @"MatchDate"]];
-			self.Players = [[FMRArrayOfPlayer createWithNode: [Soap getNode: node withName: @"Players"]] object];
-			self.Referees = [[FMRArrayOfReferee createWithNode: [Soap getNode: node withName: @"Referees"]] object];
-			self.Team = [[FMRTeam createWithNode: [Soap getNode: node withName: @"Team"]] object];
-			self.Team1 = [[FMRTeam createWithNode: [Soap getNode: node withName: @"Team1"]] object];
-			self.Tournament = [[FMRTournament createWithNode: [Soap getNode: node withName: @"Tournament"]] object];
+			self.Cards = [[FMRArrayOfCard createWithNode: [Soap getNode: node withName: @"a:Cards"]] object];
+			self.Goals = [[FMRArrayOfGoal createWithNode: [Soap getNode: node withName: @"a:Goals"]] object];
+			self.Id = [[Soap getNodeValue: node withName: @"a:Id"] intValue];
+			self.MatchDate = [Soap dateFromString: [Soap getNodeValue: node withName: @"a:MatchDate"]];
+			self.Players = [[FMRArrayOfPlayer createWithNode: [Soap getNode: node withName: @"a:Players"]] object];
+			self.Referees = [[FMRArrayOfReferee createWithNode: [Soap getNode: node withName: @"a:Referees"]] object];
+			self.Team = [[FMRTeam createWithNode: [Soap getNode: node withName: @"a:Team"]] object];
+			self.Team1 = [[FMRTeam createWithNode: [Soap getNode: node withName: @"a:Team1"]] object];
+			self.Tournament = [[FMRTournament createWithNode: [Soap getNode: node withName: @"a:Tournament"]] object];
 		}
 		return self;
 	}
@@ -82,38 +82,54 @@
 	{
 		NSMutableString* s = [super serializeElements];
 		if (self.Cards != nil && self.Cards.count > 0) {
-			[s appendFormat: @"<Cards>%@</Cards>", [FMRArrayOfCard serialize: self.Cards]];
+			[s appendFormat: @"<a:Cards>%@</a:Cards>", [FMRArrayOfCard serialize: self.Cards]];
 		} else {
-			[s appendString: @"<Cards/>"];
+			[s appendString: @"<a:Cards xsi:nil=\"true\"/>"];
 		}
 		if (self.Goals != nil && self.Goals.count > 0) {
-			[s appendFormat: @"<Goals>%@</Goals>", [FMRArrayOfGoal serialize: self.Goals]];
+			[s appendFormat: @"<a:Goals>%@</a:Goals>", [FMRArrayOfGoal serialize: self.Goals]];
 		} else {
-			[s appendString: @"<Goals/>"];
+			[s appendString: @"<a:Goals xsi:nil=\"true\"/>"];
 		}
-		[s appendFormat: @"<Id>%@</Id>", [NSString stringWithFormat: @"%i", self.Id]];
-		if (self.MatchDate != nil) [s appendFormat: @"<MatchDate>%@</MatchDate>", [Soap getDateString: self.MatchDate]];
+		[s appendFormat: @"<a:Id>%@</a:Id>", [NSString stringWithFormat: @"%i", self.Id]];
+		if (self.MatchDate != nil) {
+            [s appendFormat: @"<a:MatchDate>%@</a:MatchDate>", [Soap getDateString: self.MatchDate]];
+        } else {
+            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+        }
 		if (self.Players != nil && self.Players.count > 0) {
-			[s appendFormat: @"<Players>%@</Players>", [FMRArrayOfPlayer serialize: self.Players]];
+			[s appendFormat: @"<a:Players>%@</Players>", [FMRArrayOfPlayer serialize: self.Players]];
 		} else {
-			[s appendString: @"<Players/>"];
+			[s appendString: @"<a:Players xsi:nil=\"true\"/>"];
 		}
 		if (self.Referees != nil && self.Referees.count > 0) {
-			[s appendFormat: @"<Referees>%@</Referees>", [FMRArrayOfReferee serialize: self.Referees]];
+			[s appendFormat: @"<a:Referees>%@</Referees>", [FMRArrayOfReferee serialize: self.Referees]];
 		} else {
-			[s appendString: @"<Referees/>"];
+			[s appendString: @"<a:Referees xsi:nil=\"true\"/>"];
 		}
-		if (self.Team != nil) [s appendString: [self.Team serialize: @"Team"]];
-		if (self.Team1 != nil) [s appendString: [self.Team1 serialize: @"Team1"]];
-		if (self.Tournament != nil) [s appendString: [self.Tournament serialize: @"Tournament"]];
-
+		if (self.Team != nil) {
+            [s appendString: [self.Team serialize: @"a:Team"]];
+        } else {
+            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+        }
+		if (self.Team1 != nil) {
+            [s appendString: [self.Team1 serialize: @"a:Team1"]];
+        } else {
+            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+        }
+		if (self.Tournament != nil) {
+            [s appendString: [self.Tournament serialize: @"a:Tournament"]];
+        } else {
+            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+        }
+        
 		return s;
 	}
 	
 	- (NSMutableString*) serializeAttributes
 	{
 		NSMutableString* s = [super serializeAttributes];
-
+        [s appendString:@" xmlns:a=\"http://schemas.datacontract.org/2004/07/FootballManagement.Commons.Entities\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\""];
 		return s;
 	}
 	

@@ -7,8 +7,19 @@
 //
 
 #import "FMRMatchViewController.h"
+#import "FMRLeaguesViewController.h"
+#import "FMRFootballManagementService.h"
 
 @interface FMRMatchViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *scoreTeamALabel;
+@property (weak, nonatomic) IBOutlet UILabel *scoreTeamBLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameTeamALabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameTeamBLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timerLabel;
+
+@property (strong, nonatomic) FMRFootballManagementService *service;
+
 
 @end
 
@@ -18,7 +29,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        //
     }
     return self;
 }
@@ -26,13 +37,25 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
 }
 
-- (void)didReceiveMemoryWarning
+#pragma mark - Action Methods
+- (IBAction)goalButtonWasPressed:(id)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    UIAlertView *scoringTeam;
+}
+
+- (IBAction)yellowCardButtonWasPressed:(id)sender {
+}
+
+- (IBAction)redCardButtonWasPressed:(id)sender {
+}
+
+- (IBAction)startMatchButtonWasPressed:(id)sender {
+}
+
+- (IBAction)playerListsButtonWasPressed:(id)sender {
 }
 
 @end

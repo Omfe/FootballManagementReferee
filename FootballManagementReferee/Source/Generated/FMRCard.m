@@ -35,11 +35,11 @@
 	- (id) initWithNode: (CXMLNode*) node {
 		if(self = [super initWithNode: node])
 		{
-			self.Date = [Soap dateFromString: [Soap getNodeValue: node withName: @"Date"]];
-			self.Id = [[Soap getNodeValue: node withName: @"Id"] intValue];
-			self.Match = [[FMRMatch createWithNode: [Soap getNode: node withName: @"Match"]] object];
-			self.Player = [[FMRPlayer createWithNode: [Soap getNode: node withName: @"Player"]] object];
-			self.isRedCard = [[Soap getNodeValue: node withName: @"isRedCard"] boolValue];
+			self.Date = [Soap dateFromString: [Soap getNodeValue: node withName: @"a:Date"]];
+			self.Id = [[Soap getNodeValue: node withName: @"a:Id"] intValue];
+			self.Match = [[FMRMatch createWithNode: [Soap getNode: node withName: @"a:Match"]] object];
+			self.Player = [[FMRPlayer createWithNode: [Soap getNode: node withName: @"a:Player"]] object];
+			self.isRedCard = [[Soap getNodeValue: node withName: @"a:isRedCard"] boolValue];
 		}
 		return self;
 	}
@@ -63,11 +63,23 @@
 	- (NSMutableString*) serializeElements
 	{
 		NSMutableString* s = [super serializeElements];
-		if (self.Date != nil) [s appendFormat: @"<Date>%@</Date>", [Soap getDateString: self.Date]];
-		[s appendFormat: @"<Id>%@</Id>", [NSString stringWithFormat: @"%i", self.Id]];
-		if (self.Match != nil) [s appendString: [self.Match serialize: @"Match"]];
-		if (self.Player != nil) [s appendString: [self.Player serialize: @"Player"]];
-		[s appendFormat: @"<isRedCard>%@</isRedCard>", (self.isRedCard)?@"true":@"false"];
+		if (self.Date != nil) {
+            [s appendFormat: @"<a:Date>%@</a:Date>", [Soap getDateString: self.Date]];
+        } else {
+            [s appendString: @"<a:Date xsi:nil=\"true\"/>"];
+        }
+		[s appendFormat: @"<a:Id>%@</a:Id>", [NSString stringWithFormat: @"%i", self.Id]];
+		if (self.Match != nil) {
+            [s appendString: [self.Match serialize: @"a:Match"]];
+        } else {
+            [s appendString: @"<a:Match xsi:nil=\"true\"/>"];
+        }
+		if (self.Player != nil) {
+            [s appendString: [self.Player serialize: @"a:Player"]];
+        } else {
+            [s appendString: @"<a:Player xsi:nil=\"true\"/>"];
+        }
+		[s appendFormat: @"<a:isRedCard>%@</a:isRedCard>", (self.isRedCard)?@"true":@"false"];
 
 		return s;
 	}
@@ -75,7 +87,7 @@
 	- (NSMutableString*) serializeAttributes
 	{
 		NSMutableString* s = [super serializeAttributes];
-
+        [s appendString:@" xmlns:a=\"http://schemas.datacontract.org/2004/07/FootballManagement.Commons.Entities\" xmlns:i=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:z=\"http://schemas.microsoft.com/2003/10/Serialization/\""];
 		return s;
 	}
 	

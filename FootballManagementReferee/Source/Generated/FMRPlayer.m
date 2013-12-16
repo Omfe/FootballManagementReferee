@@ -39,12 +39,12 @@
 	- (id) initWithNode: (CXMLNode*) node {
 		if(self = [super initWithNode: node])
 		{
-			self.Cards = [[FMRArrayOfCard createWithNode: [Soap getNode: node withName: @"Cards"]] object];
-			self.Goals = [[FMRArrayOfGoal createWithNode: [Soap getNode: node withName: @"Goals"]] object];
-			self.IsAuthorized = [[Soap getNodeValue: node withName: @"IsAuthorized"] boolValue];
-			self.IsCaptain = [[Soap getNodeValue: node withName: @"IsCaptain"] boolValue];
-			self.Matches = [[FMRArrayOfMatch createWithNode: [Soap getNode: node withName: @"Matches"]] object];
-			self.Team = [[FMRTeam createWithNode: [Soap getNode: node withName: @"Team"]] object];
+			self.Cards = [[FMRArrayOfCard createWithNode: [Soap getNode: node withName: @"a:Cards"]] object];
+			self.Goals = [[FMRArrayOfGoal createWithNode: [Soap getNode: node withName: @"a:Goals"]] object];
+			self.IsAuthorized = [[Soap getNodeValue: node withName: @"a:IsAuthorized"] boolValue];
+			self.IsCaptain = [[Soap getNodeValue: node withName: @"a:IsCaptain"] boolValue];
+			self.Matches = [[FMRArrayOfMatch createWithNode: [Soap getNode: node withName: @"a:Matches"]] object];
+			self.Team = [[FMRTeam createWithNode: [Soap getNode: node withName: @"a:Team"]] object];
 		}
 		return self;
 	}
@@ -69,23 +69,27 @@
 	{
 		NSMutableString* s = [super serializeElements];
 		if (self.Cards != nil && self.Cards.count > 0) {
-			[s appendFormat: @"<Cards>%@</Cards>", [FMRArrayOfCard serialize: self.Cards]];
+			[s appendFormat: @"<a:Cards>%@</a:Cards>", [FMRArrayOfCard serialize: self.Cards]];
 		} else {
-			[s appendString: @"<Cards/>"];
+			[s appendString: @"<a:Cards xsi:nil=\"true\"/>"];
 		}
 		if (self.Goals != nil && self.Goals.count > 0) {
-			[s appendFormat: @"<Goals>%@</Goals>", [FMRArrayOfGoal serialize: self.Goals]];
+			[s appendFormat: @"<a:Goals>%@</a:Goals>", [FMRArrayOfGoal serialize: self.Goals]];
 		} else {
-			[s appendString: @"<Goals/>"];
+			[s appendString: @"<a:Goals xsi:nil=\"true\"/>"];
 		}
-		[s appendFormat: @"<IsAuthorized>%@</IsAuthorized>", (self.IsAuthorized)?@"true":@"false"];
-		[s appendFormat: @"<IsCaptain>%@</IsCaptain>", (self.IsCaptain)?@"true":@"false"];
+		[s appendFormat: @"<a:IsAuthorized>%@</a:IsAuthorized>", (self.IsAuthorized)?@"true":@"false"];
+		[s appendFormat: @"<a:IsCaptain>%@</a:IsCaptain>", (self.IsCaptain)?@"true":@"false"];
 		if (self.Matches != nil && self.Matches.count > 0) {
-			[s appendFormat: @"<Matches>%@</Matches>", [FMRArrayOfMatch serialize: self.Matches]];
+			[s appendFormat: @"<a:Matches>%@</a:Matches>", [FMRArrayOfMatch serialize: self.Matches]];
 		} else {
-			[s appendString: @"<Matches/>"];
+			[s appendString: @"<a:Matches xsi:nil=\"true\"/>"];
 		}
-		if (self.Team != nil) [s appendString: [self.Team serialize: @"Team"]];
+		if (self.Team != nil) {
+            [s appendString: [self.Team serialize: @"a:Team"]];
+        } else {
+            [s appendString: @"<a:Team xsi:nil=\"true\"/>"];
+        }
 
 		return s;
 	}

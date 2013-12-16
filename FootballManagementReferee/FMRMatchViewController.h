@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class FMRMatch;
 
 @interface FMRMatchViewController : UIViewController
+
+@property (strong, nonatomic) FMRMatch *match;
+
 
 @end
