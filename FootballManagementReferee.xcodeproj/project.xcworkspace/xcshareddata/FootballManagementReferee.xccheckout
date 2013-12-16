@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9E358584-8346-4A32-8A5E-296BA58E30A7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FootballManagementReferee</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B16D944F-10A1-4054-B6D1-C2A95C4DCA1D</key>
+		<string>https://github.com/Omfe/FootballManagementReferee.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FootballManagementReferee.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B16D944F-10A1-4054-B6D1-C2A95C4DCA1D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Omfe/FootballManagementReferee.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B16D944F-10A1-4054-B6D1-C2A95C4DCA1D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B16D944F-10A1-4054-B6D1-C2A95C4DCA1D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FootballManagementReferee</string>
+		</dict>
+	</array>
+</dict>
+</plist>

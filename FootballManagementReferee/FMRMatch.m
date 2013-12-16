@@ -110,17 +110,17 @@
 		if (self.Team != nil) {
             [s appendString: [self.Team serialize: @"a:Team"]];
         } else {
-            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+            [s appendString: @"<a:Team xsi:nil=\"true\"/>"];
         }
 		if (self.Team1 != nil) {
             [s appendString: [self.Team1 serialize: @"a:Team1"]];
         } else {
-            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+            [s appendString: @"<a:Team1 xsi:nil=\"true\"/>"];
         }
 		if (self.Tournament != nil) {
             [s appendString: [self.Tournament serialize: @"a:Tournament"]];
         } else {
-            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+            [s appendString: @"<a:Tournament xsi:nil=\"true\"/>"];
         }
         
 		return s;

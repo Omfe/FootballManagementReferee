@@ -13,44 +13,35 @@
 @interface FMRTournamentsViewController ()
 
 @property (weak, nonatomic) IBOutlet UITableView *tournamentsTableView;
-@property (strong, nonatomic) NSMutableArray *tournamentsArray;
-@property (strong, nonatomic) FMRFootballManagementService *service;
 
 @end
 
 @implementation FMRTournamentsViewController
 
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataDidUpdate:) name:FMRDataControllerDataDidUpdateNotification object:nil];
+    }
+    return self;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:FMRDataControllerDataDidUpdateNotification object:nil];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = @"Tournaments";
-    self.service = [FMRFootballManagementService service];
-    [self.service GetListTournament:self action:@selector(fetchTournaments:)];
-    
-}
-
-- (void)fetchTournaments:(id)result
-{
-    FMRTournament *tournament;
-    
-    if ([result isKindOfClass:[NSError class]] || [result isKindOfClass:[SoapFault class]]) {
-        NSLog(@"Error: %@", result);
-        return;
-    }
-    self.tournamentsArray = (NSMutableArray *)result;
-    [self.tournamentsTableView reloadData];
-    
-//    [self.service UpdateTournament:self action:@selector(test: ) tournament:[self.tournamentsArray objectAtIndex:1]];
-}
-
-- (void)test:(id)result
-{
-    NSLog(@"%@", result);
+    [[FMRDataController instance] fetchTournaments];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.tournamentsArray.count;
+    return [FMRDataController instance].tournamentsArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -58,7 +49,7 @@
     UITableViewCell *cell;
     FMRTournament *tournament;
     
-    tournament = [self.tournamentsArray objectAtIndex:indexPath.row];
+    tournament = [[FMRDataController instance].tournamentsArray objectAtIndex:indexPath.row];
     
     cell = [tableView dequeueReusableCellWithIdentifier:@"test"];
     if (!cell) {
@@ -74,10 +65,9 @@
 {
     FMRTournament *tournament;
     
-    tournament = [self.tournamentsArray objectAtIndex:indexPath.row];
+    tournament = [[FMRDataController instance].tournamentsArray objectAtIndex:indexPath.row];
     [self presentLeaguesViewControllerWithLeague:tournament];
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
 }
 
 - (void)presentLeaguesViewControllerWithLeague:(FMRTournament *)tournament
@@ -89,5 +79,9 @@
     [self.navigationController pushViewController:leaguesViewController animated:YES];
 }
 
+- (void)dataDidUpdate:(NSNotification *)notification
+{
+    [self.tournamentsTableView reloadData];
+}
 
 @end

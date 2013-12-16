@@ -47,6 +47,11 @@
 	}
 
 	- (id) initWithNode: (CXMLNode*) node {
+		NSCharacterSet *characterSet;
+        CXMLNode *relationshipNode;
+        NSString *referenceId;
+        int relationshipId;
+        
 		if(self = [super initWithNode: node])
 		{
 			self.Cards = [[FMRArrayOfCard createWithNode: [Soap getNode: node withName: @"a:Cards"]] object];
@@ -57,7 +62,22 @@
 			self.Referees = [[FMRArrayOfReferee createWithNode: [Soap getNode: node withName: @"a:Referees"]] object];
 			self.Team = [[FMRTeam createWithNode: [Soap getNode: node withName: @"a:Team"]] object];
 			self.Team1 = [[FMRTeam createWithNode: [Soap getNode: node withName: @"a:Team1"]] object];
-			self.Tournament = [[FMRTournament createWithNode: [Soap getNode: node withName: @"a:Tournament"]] object];
+            relationshipNode = [Soap getNode: node withName: @"a:Tournament"];
+            if (relationshipNode && relationshipNode.childCount == 0) {
+                for (NSString *attribute in [[relationshipNode XMLString] componentsSeparatedByString:@" "]) {
+                    if ( [attribute hasPrefix:@"z:Ref="]) {
+                        characterSet = [NSCharacterSet characterSetWithCharactersInString:@"z:Ref=\"i"];
+                        referenceId = [attribute stringByTrimmingCharactersInSet:characterSet];
+                        characterSet = [NSCharacterSet characterSetWithCharactersInString:@"\"/>"];
+                        referenceId = [referenceId stringByTrimmingCharactersInSet:characterSet];
+                        relationshipId = [referenceId intValue];
+                        self.Tournament = [[FMRDataController instance] tournamentWithId:0];
+                        break;
+                    }
+                }
+            } else {
+                self.Tournament = [[FMRTournament createWithNode: relationshipNode] object];
+            }
 		}
 		return self;
 	}
@@ -110,17 +130,17 @@
 		if (self.Team != nil) {
             [s appendString: [self.Team serialize: @"a:Team"]];
         } else {
-            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+            [s appendString: @"<a:Team xsi:nil=\"true\"/>"];
         }
 		if (self.Team1 != nil) {
             [s appendString: [self.Team1 serialize: @"a:Team1"]];
         } else {
-            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+            [s appendString: @"<a:Team1 xsi:nil=\"true\"/>"];
         }
 		if (self.Tournament != nil) {
             [s appendString: [self.Tournament serialize: @"a:Tournament"]];
         } else {
-            [s appendString: @"<a:MatchDate xsi:nil=\"true\"/>"];
+            [s appendString: @"<a:Tournament xsi:nil=\"true\"/>"];
         }
         
 		return s;
