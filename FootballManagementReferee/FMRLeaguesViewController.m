@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *teamsTableView;
 @property (strong, nonatomic) FMRFootballManagementService *service;
 @property (strong, nonatomic) NSMutableArray *allMatchesArray;
+@property (strong, nonatomic) NSMutableArray *teamsArray;
 
 @end
 
@@ -28,13 +29,17 @@
         self.title = @"Matches in Tournament";
     }
     return self;
+    
+    //forin team in result
+    //forin match in team.Matches
+    //if (match.Team.Tournament.Id == self.tournament.Id || match.Team1.Tournament.Id == self.tournament.Id)
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.service = [FMRFootballManagementService service];
-    [self.service GetListMatch:self action:@selector(fetchMatches:)];
+    [self.service GetListTeam:self action:@selector(fetchTeams:)];
     
 }
 
@@ -43,7 +48,7 @@
     NSLog(@"%@", result);
 }
 
-- (void)fetchMatches:(id)result
+- (void)fetchTeams:(id)result
 {
     NSInteger matchesAdded = 0;
     
@@ -51,12 +56,13 @@
         NSLog(@"Error: %@", result);
         return;
     }
-    self.allMatchesArray = (NSMutableArray *)result;
-    
-    for (FMRMatch *match in self.allMatchesArray) {
-        if (self.tournament.Id == match.Tournament.Id) {
-            [self.tournament.Matches insertObject:match atIndex:matchesAdded];
-            matchesAdded++;
+    //self.teamsArray = (NSMutableArray *)result;
+    for (FMRTeam *team in result) {
+        for (FMRMatch *match in team.Matches) {
+            if (match.Team.Tournament.Id == self.tournament.Id || match.Team1.Tournament.Id == self.tournament.Id) {
+                [self.tournament.Matches insertObject:match atIndex:matchesAdded];
+                matchesAdded++;
+            }
         }
     }
     [self.teamsTableView reloadData];

@@ -55,6 +55,9 @@
 		991BE2F7185E5E1B00AD39CA /* FMRTeam.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2E2185E5E1A00AD39CA /* FMRTeam.m */; };
 		991BE2F8185E5E1B00AD39CA /* FMRTournament.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2E4185E5E1A00AD39CA /* FMRTournament.m */; };
 		991BE2F9185E5E1B00AD39CA /* Soap+Prefix.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2E6185E5E1A00AD39CA /* Soap+Prefix.m */; };
+		991BE2FD185F824C00AD39CA /* FMRPlayersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE2FB185F824C00AD39CA /* FMRPlayersListViewController.m */; };
+		991BE2FE185F824D00AD39CA /* FMRPlayersListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 991BE2FC185F824C00AD39CA /* FMRPlayersListViewController.xib */; };
+		991BE301185F9DC800AD39CA /* FMRFMRDataController FMRDataController FMRDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 991BE300185F9DC800AD39CA /* FMRFMRDataController FMRDataController FMRDataController.m */; };
 		99323E1518579AEE0055B89C /* FMRTournamentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99323E1418579AEE0055B89C /* FMRTournamentsViewController.xib */; };
 		99323E1918579C350055B89C /* FMRLeaguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99323E1718579C350055B89C /* FMRLeaguesViewController.m */; };
 		99323E1A18579C350055B89C /* FMRLeaguesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99323E1818579C350055B89C /* FMRLeaguesViewController.xib */; };
@@ -179,6 +182,11 @@
 		991BE2E4185E5E1A00AD39CA /* FMRTournament.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRTournament.m; sourceTree = "<group>"; };
 		991BE2E5185E5E1A00AD39CA /* Soap+Prefix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Soap+Prefix.h"; sourceTree = "<group>"; };
 		991BE2E6185E5E1A00AD39CA /* Soap+Prefix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Soap+Prefix.m"; sourceTree = "<group>"; };
+		991BE2FA185F824C00AD39CA /* FMRPlayersListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRPlayersListViewController.h; sourceTree = "<group>"; };
+		991BE2FB185F824C00AD39CA /* FMRPlayersListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRPlayersListViewController.m; sourceTree = "<group>"; };
+		991BE2FC185F824C00AD39CA /* FMRPlayersListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMRPlayersListViewController.xib; sourceTree = "<group>"; };
+		991BE2FF185F9DC700AD39CA /* FMRFMRDataController FMRDataController FMRDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FMRFMRDataController FMRDataController FMRDataController.h"; sourceTree = "<group>"; };
+		991BE300185F9DC800AD39CA /* FMRFMRDataController FMRDataController FMRDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FMRFMRDataController FMRDataController FMRDataController.m"; sourceTree = "<group>"; };
 		99323E1418579AEE0055B89C /* FMRTournamentsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FMRTournamentsViewController.xib; sourceTree = "<group>"; };
 		99323E1618579C350055B89C /* FMRLeaguesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMRLeaguesViewController.h; sourceTree = "<group>"; };
 		99323E1718579C350055B89C /* FMRLeaguesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMRLeaguesViewController.m; sourceTree = "<group>"; };
@@ -404,6 +412,11 @@
 				99323E1B1857A68A0055B89C /* FMRMatchViewController.h */,
 				99323E1C1857A68A0055B89C /* FMRMatchViewController.m */,
 				99323E1D1857A68A0055B89C /* FMRMatchViewController.xib */,
+				991BE2FA185F824C00AD39CA /* FMRPlayersListViewController.h */,
+				991BE2FB185F824C00AD39CA /* FMRPlayersListViewController.m */,
+				991BE2FC185F824C00AD39CA /* FMRPlayersListViewController.xib */,
+				991BE2FF185F9DC700AD39CA /* FMRFMRDataController FMRDataController FMRDataController.h */,
+				991BE300185F9DC800AD39CA /* FMRFMRDataController FMRDataController FMRDataController.m */,
 				99B1C3A0184308DE0065D754 /* Images.xcassets */,
 				99323DF01857114A0055B89C /* Model */,
 				99B1C38F184308DD0065D754 /* Supporting Files */,
@@ -499,6 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991BE2FE185F824D00AD39CA /* FMRPlayersListViewController.xib in Resources */,
 				99B1C3A1184308DE0065D754 /* Images.xcassets in Resources */,
 				99B1C393184308DD0065D754 /* InfoPlist.strings in Resources */,
 				99323E1518579AEE0055B89C /* FMRTournamentsViewController.xib in Resources */,
@@ -535,6 +549,7 @@
 				991B9A8E185A363700AA34A6 /* CXMLDocument_CreationExtensions.m in Sources */,
 				991BE2ED185E5E1A00AD39CA /* FMRArrayOfTournament.m in Sources */,
 				991B9A89185A363700AA34A6 /* SoapRequest.m in Sources */,
+				991BE301185F9DC800AD39CA /* FMRFMRDataController FMRDataController FMRDataController.m in Sources */,
 				991B9A8C185A363700AA34A6 /* CXHTMLDocument.m in Sources */,
 				991B9A97185A363700AA34A6 /* CXMLNode_XPathExtensions.m in Sources */,
 				991B9A87185A363700AA34A6 /* SoapParameter.m in Sources */,
@@ -554,6 +569,7 @@
 				991B9A86185A363700AA34A6 /* SoapObject.m in Sources */,
 				991B9A96185A363700AA34A6 /* CXMLNode_PrivateExtensions.m in Sources */,
 				991B9A92185A363700AA34A6 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				991BE2FD185F824C00AD39CA /* FMRPlayersListViewController.m in Sources */,
 				991BE2EE185E5E1A00AD39CA /* FMRCard.m in Sources */,
 				991B9A7D185A363700AA34A6 /* NSData+Base64.m in Sources */,
 				991BE2F0185E5E1A00AD39CA /* FMRFootballManagementService.m in Sources */,
